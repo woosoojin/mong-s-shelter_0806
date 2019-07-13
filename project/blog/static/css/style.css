@@ -1458,7 +1458,7 @@ label.required:after {
     left: 0;
     right: 0;
     content: '';
-    background: url("../images/boxed_bg.jpg") no-repeat;
+    background-color: #F7E0F4;
     z-index: -1;
 }
 .slider_boxed,
@@ -3023,7 +3023,7 @@ body:not(.top_panel_fixed) .top_panel_position_over .top_panel_bottom {
 }
 .tparrows.default {
     background: none;
-    background-color: transparent;
+    background-color: #D2618C;
     line-height: 40px;
 }
 .tparrows.default:before {
@@ -3058,7 +3058,7 @@ body:not(.top_panel_fixed) .top_panel_position_over .top_panel_bottom {
 }
 .top_panel_title_inner {
     overflow: hidden;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(151, 6, 6, 0.1);
 }
 .top_panel_title .page_title {
     float: left;
@@ -3153,7 +3153,7 @@ blockquote p {
     line-height: 1.5em;
 }
 blockquote:before {
-    content: '“';
+    content: 'ï¿½';
     display: block;
     z-index: 1;
     font-size: 90px;
@@ -6118,7 +6118,7 @@ body .page_wrap footer.widget_area[class*="scheme_"] .widget_area_inner {
     padding-top: 6.25em;
 }
 footer {}.icon-double-right:before {
-    content: "»";
+    content: "ï¿½";
     font-size: 15px;
     font-family: "Lato", sans-serif;
     line-height: 1em;
@@ -6160,7 +6160,7 @@ footer.contacts_wrap .contacts_wrap_inner {
 }
 .block_quote:before {
     position: absolute;
-    content: "“";
+    content: "ï¿½";
     left: 3px;
     top: 0.3em;
     font-size: 6.923em;
@@ -6329,8 +6329,8 @@ a.read_more {
 .slider_form.sc_section.in_slider h4,
 .slider_form.sc_section.in_slider label,
 .slider_form.sc_section.in_slider button {
-    color: #FFFFFF!important;
-    border-color: #FFFFFF!important;
+    color: #D2618C!important;
+    border-color: #D2618C!important;
 }
 .slider_wrap {
     position: relative;

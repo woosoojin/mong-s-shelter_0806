@@ -228,7 +228,7 @@ function initRevSlider() {
 
 
     var htmlDiv = document.getElementById("rs-plugin-settings-inline-css");
-    var htmlDivCss = ".tp-caption.black,.black{color:#000;text-shadow:none}.tp-caption.mediumlightwhite1,.mediumlightwhite1{font-size:24px;line-height:30px;font-weight:300;font-family:\"Lato\";color:#ffffff;text-decoration:none;background-color:transparent;padding:0px 0px 0px 0px;border-width:0px;border-color:rgb(255,214,88);border-style:none}.tp-caption.largeboldwhitemiddle,.largeboldwhitemiddle{font-size:60px;line-height:60px;font-weight:400;font-family:\"Playfair Display\";color:#ffffff;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(255,214,88);border-style:none}";
+    var htmlDivCss = ".tp-caption.black,.black{color:#9DB6C7;text-shadow:none}.tp-caption.mediumlightwhite1,.mediumlightwhite1{font-size:24px;line-height:30px;font-weight:300;font-family:\"Lato\";color:#9DB6C7;text-decoration:none;background-color:transparent;padding:0px 0px 0px 0px;border-width:0px;border-color:rgb(9DB6C7);border-style:none}.tp-caption.largeboldwhitemiddle,.largeboldwhitemiddle{font-size:60px;line-height:60px;font-weight:400;font-family:\"Playfair Display\";color:#9DB6C7;text-decoration:none;background-color:transparent;border-width:0px;border-color:rgb(255,214,88);border-style:none}";
     if (htmlDiv) {
         htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
     } else {

@@ -4,7 +4,7 @@
 
    <head>
       <meta charset="utf-8">
-        <title>OPAL</title>
+        <title>완전 첫 페이지, vi.html</title>
         <meta name="description" content="The description should optimally be between 150-160 characters.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Madeon08">
@@ -31,7 +31,7 @@
    <body>
 
       <!-- YouTube link -->
-      <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/JhgxqC4us20',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
+      <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=LRAz6fh7BOU',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
 
       <!-- Page preloader -->
       <div id="loading">
@@ -51,26 +51,26 @@
             <div class="global-overlay"></div>
 
             <!-- Your logo -->
-            <img src="{% static 'img/logo.png' %}" alt="" class="brand-logo text-intro opacity-0" />
+            <img src='/static/images/vi_dog.png' alt="" class="brand-logo text-intro opacity-0" />
 
             <!-- START - Content -->
             <div class="content">
 
-               <h1 class="text-intro opacity-0">Grand opening in : <div id="getting-started" class="countdown-variant"></div></h1>
+               <h1 class="text-intro opacity-0">우리의 6번째 가족: <br> 구름이 (Cloud)<!-- <div id="getting-started" class="countdown-variant"></div> --></h1>
 
-               <p class="text-intro opacity-0">Perfect and awesome template to present your future product or service.<br>
-                  Hooking audience attention is all in the opener.</p>
+               <p class="text-intro opacity-0">미소가 예쁜 우리 가족, "구름이"를 소개합니다.<br>
+               같이 구름이에 대해 알아보아요.   </p>
 
                <nav>
                   <ul>
                      <li>
-                        <a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">More Informations</a>
+                        <a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">구름이에 대해 더 알아보기</a>
                      </li>
                      <li>
-                        <a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Notify Me!</a>
+                        <a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">사이트의 목적</a>
                      </li>
                      <li>
-                        <a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">Main Site</a>
+                        <a href="{% url 'index'%}" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">공식 사이트 둘러보기</a>
                      </li>
                   </ul>
                </nav>
@@ -114,7 +114,7 @@
                </div>
 
                <p class="copyright">
-                  © OPAL - Made for awesome people
+                  © 멍스쉘터 - 멋쟁이사자처럼 7기
                </p>
 
             </div>
