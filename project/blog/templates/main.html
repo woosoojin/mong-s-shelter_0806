@@ -80,13 +80,22 @@
 
                                         <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">커뮤니티</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="index.html">입양후기</a></li>
+                                                <li class="menu-item current-menu-item"><a href="{% url 'post' %}">입양후기</a></li>
                                                 <li class="menu-item current-menu-item"><a href="index.html">멍스쉐어</a></li>
                                                 <li class="menu-item"><a href="home-2.html">Q&A</a></li>
                                             </ul>
                                         </li>
                                         
                                         <li class="menu-item"><a href="shop.html">Magazine</a></li>
+
+                                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">Account</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item current-menu-item"><a href="{% url 'signup' %}">회원가입</a></li>
+                                                <li class="menu-item"><a href="{% url 'login' %}">로그인</a></li>
+                                                <li class="menu-item"><a href="{% url 'logout' %}">로그아웃</a></li>
+                                            </ul>
+                                        </li>
+                                        
                                     </ul>
                                 </nav>
                             </div>

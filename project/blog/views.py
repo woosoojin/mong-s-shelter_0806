@@ -26,3 +26,6 @@ def school_dog(request):
 
 def school_parent(request):
     return render(request, 'school_parent.html')
+
+def users(request):
+    return render(request, 'users.html')

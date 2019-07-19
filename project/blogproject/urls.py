@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 import blog.views
 import post.views
+
 from django.conf import settings
 from django.conf.urls.static import static
 # from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -30,8 +31,16 @@ urlpatterns = [
     path('service/', blog.views.service, name="service"),
     path('school_parent/', blog.views.school_parent, name='school_parent'),
     path('school_dog/', blog.views.school_dog, name='school_dog'),
-
+    
     path('post/', post.views.post, name="post"),
+    path('q&a/', post.views.QA, name="q&a"),
+    path('adopting/', post.views.adopting, name='adopting'),
+
+    #path('accounts/', include('allauth.urls')),
+
+    path('users/', blog.views.users, name='users'),
+
+    path('user_accounts/', include('user_accounts.urls')),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # + staticfiles_urlpatterns()
