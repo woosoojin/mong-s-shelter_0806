@@ -19,13 +19,3 @@ def team_member(request):
 
 def service(request):
     return render(request, 'service.html')
-
-# 훈련소
-def school_dog(request):
-    return render(request, 'school_dog.html')
-
-def school_parent(request):
-    return render(request, 'school_parent.html')
-
-def users(request):
-    return render(request, 'users.html')

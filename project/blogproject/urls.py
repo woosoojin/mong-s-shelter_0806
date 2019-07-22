@@ -29,16 +29,17 @@ urlpatterns = [
     path('about_us/', blog.views.about_us, name="about_us"),
     path('team_member/', blog.views.team_member, name="team_member"),
     path('service/', blog.views.service, name="service"),
-    path('school_parent/', blog.views.school_parent, name='school_parent'),
-    path('school_dog/', blog.views.school_dog, name='school_dog'),
     
-    path('post/', post.views.post, name="post"),
+    path('review/', post.views.review, name="review"),
     path('q&a/', post.views.QA, name="q&a"),
     path('adopting/', post.views.adopting, name='adopting'),
+    path('adopting_de/', post.views.adopting_de, name='adopting_de'),
+    path('school_parents/', post.views.school_parents, name='school_parents'),
+    path('school_dog/', post.views.school_dog, name='school_dog'),
 
     #path('accounts/', include('allauth.urls')),
 
-    path('users/', blog.views.users, name='users'),
+    #path('users/', blog.views.users, name='users'),
 
     path('user_accounts/', include('user_accounts.urls')),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -65,22 +65,22 @@
 
                                         <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">입양하기</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="index.html">Home 1</a></li>
-                                                <li class="menu-item"><a href="home-2.html">Home 2</a></li>
+                                                <li class="menu-item current-menu-item"><a href="{% url 'adopting' %}">아이들 보기</a></li>
+                                                <li class="menu-item"><a href="home-2.html">입양 준비</a></li>
                                                 <li class="menu-item"><a href="home-3.html">Home 3</a></li>
                                             </ul>
                                         </li>
 
                                         <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">멍스스쿨</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'school_parent' %}">보호자 훈련소</a></li>
+                                                <li class="menu-item current-menu-item"><a href="{% url 'school_parents' %}">보호자 훈련소</a></li>
                                                 <li class="menu-item"><a href="{% url 'school_dog' %}">댕댕이 훈련소</a></li>
                                             </ul>
                                         </li>
 
                                         <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">커뮤니티</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'post' %}">입양후기</a></li>
+                                                <li class="menu-item current-menu-item"><a href="{% url 'review' %}">입양후기</a></li>
                                                 <li class="menu-item current-menu-item"><a href="index.html">멍스쉐어</a></li>
                                                 <li class="menu-item"><a href="{% url 'q&a' %}">Q&A</a></li>
                                             </ul>
