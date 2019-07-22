@@ -27,7 +27,6 @@ class Adopting(models.Model):
 class School_parents(models.Model):
     title3 = models.CharField(max_length = 255)
     url1 = models.URLField(blank=True)
-    file1 = models.FileField(null=True, blank=True, upload_to='viedo/parent')
     description4 = models.CharField(max_length = 500)
 
     def __str__(self):
