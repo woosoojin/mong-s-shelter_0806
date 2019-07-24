@@ -1,203 +1,141 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en-US" class="scheme_original">
+<html lang="en">
+  <head>
+    <title>Klift - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
-    <title>Main page</title>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic%7CLato:400,300,300italic,400italic,700,700italic,900,900italic%7COpen+Sans%3A300%2C400%2C600%2C700%2C800%7CRaleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CDroid+Serif%3A400%2C700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/_settings.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/fontello/css/fontello.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/style.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/_animation.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/shortcodes.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/skin.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/responsive.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'css/custom/skin.responsive.css' %}" type='text/css' media='all' />
-    <link rel='stylesheet' href="{% static 'js/vendor/swiper/swiper.min.js' %}" type='text/javascript' media='all' />
-</head>
+    <link rel="stylesheet" href="{% static 'third/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'third/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/magnific-popup.css' %}">
 
-<body class="home page body_style_boxed body_filled top_panel_show top_panel_above sidebar_hide sidebar_outer_hide">
-<div class="body_wrap">
-    <div class="page_wrap">
-        <div class="top_panel_fixed_wrap"></div>
-        <header class="top_panel_wrap top_panel_style_3 scheme_original">
-            <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
-                <div class="top_panel_top">
-                    <div class="content_wrap clearfix">
-                        <div class="top_panel_top_user_area top_panel_top_user_area_right hire_no">
-                            <ul id="menu_user" class="menu_user_nav">
-                                <!--<li class="menu-item"><a href="about-us.html">About Us</a></li>
-                                <li class="menu-item"><a href="career-center.html">Career Center</a></li>
-                                <li class="menu-item"><a href="resource-center.html">Security Resource Center</a></li>-->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="top_panel_middle">
-                    <div class="content_wrap">
-                        <div class="columns_wrap columns_fluid">
-                            <div class="column-1_3 contact_logo">
-                                <div class="logo">
-                                    <!--<a href="index.html"><img src="{% static 'KakaoTalk_20190203_151007834.jpg' %}" class="logo_main" alt=""><img src="{% static 'logo1.png' %}" class="logo_fixed" alt="">-->
-                                        
-                                        <div class="logo_text" >멍스쉘터</div>
-                                        <br>
-                                        <div class="logo_slogan">Mong's Shelter</div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="column-2_3 menu_main_wrap">
-                                <a href="#" class="menu_main_responsive_button icon-menu"></a>
-                                <nav class="menu_main_nav_area">
-                                    <ul id="menu_main" class="menu_main_nav">
-                                        
-                                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">About</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'about_us' %}">About us</a></li>
-                                                <li class="menu-item"><a href="{% url 'team_member' %}">Team member</a></li>
-                                                <li class="menu-item"><a href="{% url 'service' %}">Service</a></li>
-                                            </ul>
-                                        </li>
+    <link rel="stylesheet" href="{% static 'third/css/aos.css' %}">
 
-                                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">입양하기</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'adopting' %}">아이들 보기</a></li>
-                                                <li class="menu-item"><a href="home-2.html">입양 준비</a></li>
-                                                <li class="menu-item"><a href="home-3.html">Home 3</a></li>
-                                            </ul>
-                                        </li>
+    <link rel="stylesheet" href="{% static 'third/css/ionicons.min.css' %}">
 
-                                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">멍스스쿨</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'school_parents' %}">보호자 훈련소</a></li>
-                                                <li class="menu-item"><a href="{% url 'school_dog' %}">댕댕이 훈련소</a></li>
-                                            </ul>
-                                        </li>
+    <link rel="stylesheet" href="{% static 'third/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/jquery.timepicker.css' %}">
 
-                                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children"><a href="#">커뮤니티</a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item current-menu-item"><a href="{% url 'review' %}">입양후기</a></li>
-                                                <li class="menu-item current-menu-item"><a href="index.html">멍스쉐어</a></li>
-                                                <li class="menu-item"><a href="{% url 'q&a' %}">Q&A</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item"><a href="shop.html">Magazine</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    
+    <link rel="stylesheet" href="{% static 'third/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'third/css/style.css' %}">
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="#">Mong's Shelter</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">Adopting</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">School</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">Magazine</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    {% block content %}
+            
+    {% endblock %}
+  
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Klift</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
             </div>
-        </header>
-        <style>
-      
-            .new_text {
-                color: black;
-    font-family: "Lato", sans-serif
-            }
-        </style>
-        <section class="slider_wrap slider_fullwide slider_engine_revo slider_alias_proguards_slider1">
-            <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
-                <div id="rev_slider_1_1" class="rev_slider fullwidthabanner tp-overflow-hidden" data-version="5.2.5.4">
-                    <div class="container">
-                            {% block contents %}
-                            {% endblock %}
-                    </div>
-                </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
             </div>
-        </section>
-
-        <footer class="footer_wrap widget_area scheme_original">
-                <div class="footer_wrap_inner widget_area_inner">
-                    <div class="content_wrap">
-                        <div class="columns_wrap">
-                            <aside class="column-1_2 widget widget_socials">
-                                <div class="widget_inner">
-                                    <div class="logo">
-                                        <a href="index.html"><img src="{% static 'logo1.png' %}" class="logo_main" alt="">
-                                            <div class="logo_text">ProGuards</div>
-                                            <br>
-                                            <div class="logo_slogan">safety above all</div>
-                                        </a>
-                                    </div>
-                                    <div class="logo_descr">
-                                        <span class="lh_1">
-                                            <span class="titl">Personal Security</span>ProGuards Security Services
-                                            <br/> 8531 S. Central Ave
-                                            <br/> Los Angeles, CA. 90000
-                                            <br/> Ph: (123) 123-1234 Fax: (123) 123-1234
-                                            <br/>
-                                            <br/> Email: <a href="#" class="accent2">info@ancorathemes.com</a>
-                                        </span>
-                                        <span class="lh_1">
-                                            <span class="titl">Secure My Organization</span>ProGuards Security Services
-                                            <br/> 8531 S. Central Ave
-                                            <br/> Los Angeles, CA. 90000
-                                            <br/> Ph: (123) 123-1234 Fax: (123) 123-1234
-                                            <br/>
-                                            <br/> Email: <a href="#" class="accent2">info@ancorathemes.com</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </aside>
-                            <aside class="column-1_2 widget widget_text">
-                                <div class="textwidget">
-                                    <span class="lh_2 ic_list">
-                                    <a href="#">Temporary Security</a><br>
-                                    <a href="#">Private Security</a><br>
-                                    <a href="#">Ambassador Program</a><br>
-                                    <a href="#">Integrated Security Solutions</a><br>
-                                    <a href="#">National Accounts</a><br>
-                                    <a href="#">The Experience</a><br>
-                                    <a href="#">About Us</a>
-                                    </span>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <div class="copyright_wrap copyright_style_menu scheme_original">
-                <div class="copyright_wrap_inner">
-                    <div class="content_wrap">
-                        <ul class="menu_footer_nav">
-                            <li class="menu-item"><a href="index.html">Home</a></li>
-                            <li class="menu-item"><a href="pages.html">Pages</a></li>
-                            <li class="menu-item"><a href="services.html">Services</a></li>
-                            <li class="menu-item"><a href="blog.html">Blog</a></li>
-                            <li class="menu-item"><a href="gallery.html">Gallery</a></li>
-                            <li class="menu-item"><a href="contacts.html">Contacts</a></li>
-                        </ul>
-                        <div class="copyright_text">
-                            <a href='#'>Ancora</a> &copy; 2015 All Rights Reserved <span><a href='#' class='tou'>Terms of Use</a> and <a href='#' class='pp'>Privacy Policy</a></span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Architectural Design</a></li>
+                <li><a href="#">Interior Design</a></li>
+                <li><a href="#">Exterior Design</a></li>
+                <li><a href="#">Lighting Design</a></li>
+                <li><a href="#">AutoCAD Service</a></li>
+              </ul>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
 
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- loader -->
 
-<script type='text/javascript' src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/jquery/jquery-migrate.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/revslider/jquery.themepunch.tools.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/revslider/jquery.themepunch.revolution.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/vendor/revslider/revolution.extension.video.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/vendor/revslider/revolution.extension.slideanims.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/vendor/revslider/revolution.extension.layeranimation.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/vendor/revslider/revolution.extension.navigation.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/modernizr.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/custom/custom.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/superfish.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/slidemenu.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/custom/_utils.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/custom/_init.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/custom/shortcodes.js' %}"></script>
-<script type='text/javascript' src="{% static 'js/vendor/swiper/swiper.min.js' %}"></script>
-</body>
-
+  <script src="{% static 'third/js/jquery.min.js' %}"></script>
+  <script src="{% static 'third/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'third/js/popper.min.js' %}"></script>
+  <script src="{% static 'third/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'third/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'third/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'third/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'third/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'third/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'third/js/aos.js' %}"></script>
+  <script src="{% static 'third/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'third/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'third/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'third/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'third/js/google-map.js' %}"></script>
+  <script src="{% static 'third/js/main.js' %}"></script>
+    
+  </body>
 </html>
-

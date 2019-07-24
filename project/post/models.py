@@ -28,6 +28,7 @@ class School_parents(models.Model):
     title3 = models.CharField(max_length = 255)
     url1 = models.URLField(blank=True)
     description4 = models.CharField(max_length = 500)
+    thumbnail = models.ImageField(blank=True, upload_to='images/school')
 
     def __str__(self):
         return self.title3
@@ -36,6 +37,7 @@ class School_dog(models.Model):
     title4 = models.CharField(max_length = 255)
     url2 = models.URLField(blank=True)
     description5 = models.CharField(max_length = 500)
+    thumbnail2 = models.ImageField(blank=True, upload_to='images/school')
 
     def __str__(self):
         return self.title4
