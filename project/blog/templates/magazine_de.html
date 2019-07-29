@@ -1,0 +1,317 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bato Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'Mag/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'Mag/css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'Mag/css/bootstrap.css' %}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'Mag/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'Mag/css/owl.theme.default.min.css' %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static 'Mag/css/magnific-popup.css' %}">
+
+	<link rel="stylesheet" href="{% static 'Mag/css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'Mag/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        h2.magazine-title{
+            font-family: "Gamja Flower";
+        }
+    </style>
+	</head>
+	<body>
+
+	<nav id="colorlib-main-nav" role="navigation">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+		<div class="js-fullheight colorlib-table">
+			<div class="colorlib-table-cell js-fullheight">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
+							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<ul>
+							<li class="active"><a href="index.html">까미</a></li>
+							<li><a href="work.html">Work</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="about.html">지난호 매거진 보기</a></li>
+							<li><a href="contact.html">후원하기</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="head-title">Gallery</h2>
+						<a href="{% static '../static/Mag/images/2.png' %}" class="gallery image-popup-link text-center" style="background-image: url('../static/Mag/images/2.png');">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="{% static '../static/Mag/images/3.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/3.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="{% static '../static/Mag/images/4.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/4.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+						<a href="{% static '../static/Mag/images/17.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/17.png);">
+							<span><i class="icon-search3"></i></span>
+                        </a>
+                        <a href="{% static '../static/Mag/images/12.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/12.png);">
+							<span><i class="icon-search3"></i></span>
+                        </a>
+                        <a href="{% static '../static/Mag/images/13.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/13.png);">
+							<span><i class="icon-search3"></i></span>
+                        </a>
+                        <a href="{% static '../static/Mag/images/15.png' %}" class="gallery image-popup-link text-center" style="background-image: url(../static/Mag/images/15.png);">
+							<span><i class="icon-search3"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="colorlib-page">
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="colorlib-navbar-brand">
+							<a class="colorlib-logo" href="index.html">Mongazine</a>
+						</div>
+						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="colorlib-hero" class="js-fullheight">
+			<div class="owl-carousel">
+				<div class="item">
+					<div class="hero-flex js-fullheight">
+						<div class="col-three-forth">
+							<div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/2.png);"></div>
+						</div>
+						<div class="col-one-forth js-fullheight">
+							<div class="display-t js-fullheight">
+								<div class="display-tc js-fullheight">
+									<h2 class="number">01/08</h2>
+									<div class="text-inner">
+										<div class="desc">
+											<span class="tag">Mongazine 7월호</span>
+											<h2 class="magazine-title">Ep1. 까미 이야기</h2>
+											<p>&nbsp&nbsp까미와 더운 여름날 기찻길 위에서 처음 만나게 되었어요. 막 발견되었을 때 까미는 숨을 엄청나게 헐떡이고 있었어요.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="hero-flex js-fullheight">
+						<div class="col-three-forth">
+							<div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/3.png);"></div>
+						</div>
+						<div class="col-one-forth js-fullheight">
+							<div class="display-t js-fullheight">
+								<div class="display-tc js-fullheight">
+									<h2 class="number">02/08</h2>
+									<div class="text-inner">
+										<div class="desc">
+											<p>자세히 보니 까미는 털도 온전치 못한 상태였어요.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="hero-flex js-fullheight">
+						<div class="col-three-forth">
+							<div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/4.png);"></div>
+						</div>
+						<div class="col-one-forth js-fullheight">
+							<h2 class="number">03/08</h2>
+							<div class="display-t js-fullheight">
+								<div class="display-tc js-fullheight">
+									<div class="text-inner">
+										<div class="desc">
+											<p>&nbsp&nbsp가까이 다가가자 까미는 그 자리에서 힘겹게 일어났어요. 하지만 극도로 부족한 영양상태 때문에 혼자 힘으로는 제대로 서있지도 못했어요. 심지어 구조 중 까미는 경사면에서 구르기도 했어요. 정말 가슴이 아팠던 순간이었어요.</p>
+											<p><a href="work.html" class="btn-view">후원하기 <i class="icon-arrow-right3"></i></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+                
+				<div class="item">
+                        <div class="hero-flex js-fullheight">
+                            <div class="col-three-forth">
+                                <div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/17.png);"></div>
+                            </div>
+                            <div class="col-one-forth js-fullheight">
+                                <h2 class="number">04/08</h2>
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight">
+                                        <div class="text-inner">
+                                            <div class="desc">
+                                                <p>&nbsp&nbsp저희는 까미에게 천천히 허락을 구했고, 다행히도 곧 까미는 자신을 만지도록 허락해주었어요. 온몸에 힘이 없어 축 쳐지는 까미의 모습을 보고 더더욱 마음이 아팠어요.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+				<div class="item">
+                        <div class="hero-flex js-fullheight">
+                            <div class="col-three-forth">
+                                <div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/12.png);"></div>
+                            </div>
+                            <div class="col-one-forth js-fullheight">
+                                <h2 class="number">05/08</h2>
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight">
+                                        <div class="text-inner">
+                                            <div class="desc">
+                                                <p>&nbsp&nbsp저희는 까미를 실내로 이동시켜 얼른 진찰을 해보았어요. 까미가 치료를 하는 도중에도 숨을 많이 헐떡여서 너무 걱정이 되었어요.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="hero-flex js-fullheight">
+                            <div class="col-three-forth">
+                                <div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/13.png);"></div>
+                            </div>
+                            <div class="col-one-forth js-fullheight">
+                                <h2 class="number">06/08</h2>
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight">
+                                        <div class="text-inner">
+                                            <div class="desc">
+                                                <p>&nbsp&nbsp하지만 까미는 치료과정들을 잘 견뎌주었고, 금방 건강을 되찾았어요. 이 사진은 붕대를 풀고 처음으로 목욕을 한 날이에요. 이제는 물을 좋아하는 까미지만, 첫 목욕 때에는 어찌나 반항을 하던지... 씻기느라 고생을 쫌 했답니다.</p>
+                                                <p><a href="work.html" class="btn-view">구독하기 <i class="icon-arrow-right3"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="hero-flex js-fullheight">
+                            <div class="col-three-forth">
+                                <div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/15.png);"></div>
+                            </div>
+                            <div class="col-one-forth js-fullheight">
+                                <h2 class="number">07/08</h2>
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight">
+                                        <div class="text-inner">
+                                            <div class="desc">
+                                                <p>까미는 이제 혼자서 밥도 혼자서 잘 먹는 답니다.</p>
+                                                <p><a href="work.html" class="btn-view">View Galleries <i class="icon-arrow-right3"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="hero-flex js-fullheight">
+                            <div class="col-three-forth">
+                                <div class="hero-img js-fullheight" style="background-image: url(../static/Mag/images/1200298168-member.jpg);"></div>
+                            </div>
+                            <div class="col-one-forth js-fullheight">
+                                <h2 class="number">08/08</h2>
+                                <div class="display-t js-fullheight">
+                                    <div class="display-tc js-fullheight">
+                                        <div class="text-inner">
+                                            <div class="desc">
+                                                <h2>Mongazine 7월호</h2>
+                                                <p>&nbsp&nbsp까미는 고기보다는 채소를 좋아하는 아이에요. 그리고 공놀이를 하면서 여기저기 뛰어 다니는 걸 세상에서 제일 좋아한답니다.</p>
+                                                <p style="text-align: center">밝고 귀여운 우리 까미를 새로운 가족으로 받아들여주세요.</p>
+                                                <p style="text-align: center"><a href="work.html" class="btn-view">까미 입양하기 <i class="icon-arrow-right3"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+		</div>
+	
+	</div>
+	<!-- jQuery -->
+	<script src="{% static 'Mag/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'Mag/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'Mag/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'Mag/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Owl Carousel -->
+	<script src="{% static 'Mag/js/owl.carousel.min.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static 'Mag/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'Mag/js/magnific-popup-options.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'Mag/js/main.js' %}"></script>
+
+	</body>
+</html>
+

@@ -9,59 +9,77 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% static 'third/css/open-iconic-bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/animate.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'fifth/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/animate.css' %}">
     
-    <link rel="stylesheet" href="{% static 'third/css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/owl.theme.default.min.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/magnific-popup.css' %}">
 
-    <link rel="stylesheet" href="{% static 'third/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/aos.css' %}">
 
-    <link rel="stylesheet" href="{% static 'third/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/ionicons.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'third/css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/jquery.timepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/jquery.timepicker.css' %}">
 
     
-    <link rel="stylesheet" href="{% static 'third/css/flaticon.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/icomoon.css' %}">
-    <link rel="stylesheet" href="{% static 'third/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'fifth/css/style.css' %}">
+
+    <!--Team member-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500"> 
+    <link rel="stylesheet" href="{% static 'fourth/fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fourth/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'fourth/css/mediaelementplayer.css' %}">
+    <link rel="stylesheet" href="{% static 'fourth/fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'fourth/css/fl-bigmug-line.css' %}">
+
   </head>
-  <body>
+  <body style="padding:0px; margin:0px; width:100%;">
     
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 	    <div class="container">
-	      <a class="navbar-brand" href="#">Mong's Shelter</a>
+	      <a class="navbar-brand" href="index.html">Mong's Shelter</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Adopting</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">School</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Magazine</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+	        	<li class="nav-item"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Adopting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Adoption Review</a></li>
+	        	<li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Magazine</a></li>
+            <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
+            <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
+            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-
-    {% block content %}
-            
-    {% endblock %}
+    
   
+        {% block content %}
 
+        {% endblock %}
+     
+              
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Klift</h2>
+              <h2 class="ftco-heading-2">Mong's Shelter</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -101,7 +119,7 @@
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -117,25 +135,36 @@
         </div>
       </div>
     </footer>
-  <!-- loader -->
-
-  <script src="{% static 'third/js/jquery.min.js' %}"></script>
-  <script src="{% static 'third/js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'third/js/popper.min.js' %}"></script>
-  <script src="{% static 'third/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'third/js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'third/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'third/js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'third/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'third/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'third/js/aos.js' %}"></script>
-  <script src="{% static 'third/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'third/js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'third/js/jquery.timepicker.min.js' %}"></script>
-  <script src="{% static 'third/js/scrollax.min.js' %}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'third/js/google-map.js' %}"></script>
-  <script src="{% static 'third/js/main.js' %}"></script>
     
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#ffcdcd"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ffcdcd"/></svg></div>
+
+
+  <script src="{% static 'fifth/js/jquery.min.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'fifth/js/popper.min.js' %}"></script>
+  <script src="{% static 'fifth/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'fifth/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'fifth/js/aos.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'fifth/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'fifth/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'fifth/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'fifth/js/google-map.js' %}"></script>
+  <script src="{% static 'fifth/js/main.js' %}"></script>
+    
+  <!--Team member-->
+  <script src="{% static 'fourth/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'fourth/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'fourth/js/mediaelement-and-player.min.js' %}"></script>
+  <script src="{% static 'fourth/js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'fourth/js/bootstrap-datepicker.min.js' %}"></script>
   </body>
 </html>

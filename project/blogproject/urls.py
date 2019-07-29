@@ -29,14 +29,21 @@ urlpatterns = [
     path('about_us/', blog.views.about_us, name="about_us"),
     path('team_member/', blog.views.team_member, name="team_member"),
     path('service/', blog.views.service, name="service"),
-    
+    path("magazine_de/", blog.views.magazine_de, name="magazine_de"),
+    path("magazine_de2/", blog.views.magazine_de2, name="magazine_de2"),
+
     path('review/', post.views.review, name="review"),
+    # path('question/', post.views.question, name="question"),
     path('q&a/', post.views.QA, name="q&a"),
+
+    
     path('adopting/', post.views.adopting, name='adopting'),
     path('adopting_de/', post.views.adopting_de, name='adopting_de'),
     path('school_parents/', post.views.school_parents, name='school_parents'),
     path('school_dog/', post.views.school_dog, name='school_dog'),
-
+    path('personal_info/', post.views.personal_info, name='personal_info'),
+    
+    path("magazine/", post.views.magazine, name="magazine"),
     #path('accounts/', include('allauth.urls')),
 
     #path('users/', blog.views.users, name='users'),

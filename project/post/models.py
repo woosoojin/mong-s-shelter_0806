@@ -18,12 +18,13 @@ class Question(models.Model):
 
 class Adopting(models.Model):
     name = models.CharField(max_length=255)
+    name2 = models.CharField(blank=True, max_length=255)
+    image = models.ImageField(blank=True, upload_to='images/adopting')
     image2 = models.ImageField(blank=True, upload_to='images/adopting')
-    description3 = models.CharField(max_length=10000)
+    description = models.CharField(max_length=10000)
+    description2 = models.CharField(blank=True, max_length=10000)
 
-    def __str__(self):
-        return self.name
-
+    
 class School_parents(models.Model):
     title3 = models.CharField(max_length = 255)
     url1 = models.URLField(blank=True)
@@ -41,3 +42,8 @@ class School_dog(models.Model):
 
     def __str__(self):
         return self.title4
+        
+class Magazine(models.Model):
+    name = models.CharField(max_length = 255)
+    description = models.CharField(max_length = 500)
+    thumbnail = models.ImageField(blank=True, upload_to='images/magazine')

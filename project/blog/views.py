@@ -19,3 +19,9 @@ def team_member(request):
 
 def service(request):
     return render(request, 'service.html')
+
+def magazine_de(request):
+    return render(request, 'magazine_de.html')
+
+def magazine_de2(request):
+    return render(request, 'magazine_de2.html')    

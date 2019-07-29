@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  {% block content %}
+  <head>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+ 
+  <style>
+    .ftco-navbar-light {
+      background: transparent !important;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right: 0;
+      z-index: 3;
+    }
+  
+  </style>
+ 
+  </head>
+  <body>    
+    <section class="home-slider js-fullheight owl-carousel">
+            <div class="slider-item js-fullheight" style="background-image:url(../../static/fifth/images/19_sad_dog-wallpaper-2048x1152.jpg);">
+                <div class="overlay"></div>
+              <div class="container">
+                <div class="row slider-text justify-content-center align-items-center">
+                  <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                      <h1 class="mb-3 mt-5 bread">Adoption</h1>
+                      <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Adoption</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </section>   
+  </body>
+</html>
+
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	
+	<!-- Stylesheets -->
+	<link href="{% static 'adopt/common-css/ionicons.css' %}" rel="stylesheet">
+	
+	<link href="{% static 'adopt/04_Blog/css/styles.css' %}" rel="stylesheet">
+	
+	<link href="{% static 'adopt/04_Blog/css/responsive.css' %}" rel="stylesheet">
+	
+</head>
+<body>
+  <section class="main-section">
+	
+		<div class="blog-area">
+			<a class="blog-post" style="background-image:url(../../static/adopt/images/blog-1-800x600.jpg);" href="#">
+				<img src="{% static '../../static/adopt/images/blog-1-800x600.jpg' %}" alt="">
+				<div class="blog-info">
+					<h6 class="color-green margin-b-5">PHPTPGRAPHY</h6>
+					<h3>How Charles Masnson Nearly Made It in Hollywood</h3>
+				</div><!-- blog-info -->
+			</a><!-- blog-post -->
+			
+			<a class="blog-post" style="background-image:url(../../static/adopt/images/blog-2-800x600.jpg);" href="#">
+				<img src="{% static '../../static/adopt/images/blog-2-800x600.jpg' %}" alt="">
+				<div class="blog-info">
+					<h6 class="color-green margin-b-5">PHPTPGRAPHY</h6>
+					<h3>How Charles Masnson Nearly Made It in Hollywood</h3>
+				</div><!-- blog-info -->
+			</a><!-- blog-post -->
+    </div><!-- blog-area -->
+    
+    <div class="blog-area">
+        <a class="blog-post full-height" style="background-image:url(../../static/adopt/images/blog-3-800x1200.jpg);" href="#">
+          <img src="{% static '../../static/adopt/images/blog-3-800x1200.jpg' %}" alt="">
+          <div class="blog-info">
+            <h6 class="color-green margin-b-5">PHPTPGRAPHY</h6>
+            <h3>How Charles Masnson Nearly Made It in Hollywood</h3>
+          </div><!-- blog-info -->
+        </a><!-- blog-post -->
+      </div><!-- blog-area -->
+      
+      <div class="blog-area">
+        <a class="blog-post" style="background-image:url(../../static/adopt/images/blog-4-800x600.jpg);" href="#">
+          <img src="{% static '../../static/adopt/images/blog-4-800x600.jpg' %}" alt="">
+          <div class="blog-info">
+            <h6 class="color-green margin-b-5">PHPTPGRAPHY</h6>
+            <h3>How Charles Masnson Nearly Made It in Hollywood</h3>
+          </div><!-- blog-info -->
+        </a><!-- blog-post -->
+        
+        <a class="blog-post" style="background-image:url(../../static/adopt/images/blog-5-800x600.jpg);" href="#">
+          <img src="{% static 'images/blog-5-800x600.jpg' %}" alt="">
+          <div class="blog-info">
+            <h6 class="color-green margin-b-5">PHPTPGRAPHY</h6>
+            <h3>How Charles Masnson Nearly Made It in Hollywood</h3>
+          </div><!-- blog-info -->
+        </a><!-- blog-post -->
+      </div><!-- blog-area -->
+		
+	</section><!-- main-section -->
+
+
+	
+	<script src="{% static 'adopt/common-js/jquery-3.2.1.min.js' %}"></script>
+	
+	<script src="{% static 'adopt/common-js/scripts.js' %}"></script>
+	
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,334 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+   <head>
+      <meta charset="utf-8">
+        <title>멍스쉘터 - Mong's Shelter</title>
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="SeongJun">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="멍스쉘터 - Mong's Shelter">
+        <meta property="og:description" content="강아지 매거진, 유기견들에게 따뜻한 손길을, 동물복지, 보호소, 보호소 찾기, 매거진 구독, 강아지 분양, 유기견 분양, 함께하세요, 무료분양, 자원봉사, 봉사활동, 입양하기, 후원하기, 기부하기">
+        <meta property="og:image" content="{% static 'img/background-newsletter-ai.jpg' %}">
+        <meta property="og:url" content="https://www.mong.kr">
+
+        <!-- ================= Favicon ================== -->
+        <!--Standard -->
+        <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+        <!-- Retina iPad Touch Icon
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/favicon-retina-ipad.png' %}">
+        Retina iPhone Touch Icon
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/favicon-retina-iphone.png' %}">
+        Standard iPad Touch Icon 
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/favicon-standard-ipad.png' %}">
+        Standard iPhone Touch Icon
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/favicon-standard-iphone.png' %}">
+         --> 
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+      <!-- Modernizr runs quickly on page load to detect features -->
+      <script src="{% static 'js/modernizr.custom.js' %}"></script>
+      <!-- google adsense-->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-9485975204848170",
+                enable_page_level_ads: true
+           });
+      </script>
+      <script async custom-element="amp-auto-ads"
+         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+      </script>
+
+      {% if error %}
+      <script>
+         alert("{{ error }}");
+      </script>
+      {% endif %}
+
+   </head>
+   
+   <body>
+      <!-- google adsense-->
+      <amp-auto-ads type="adsense"
+         data-ad-client="ca-pub-9485975204848170">
+      </amp-auto-ads>
+      <!-- YouTube link <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=LRAz6fh7BOU',containment:'body',autoPlay:true, mute:false, startAt:0, stopAt:0, opacity:1}"></a>
+ -->
+     
+      <!-- Page preloader -->
+      <div id="loading">
+         <div id="preloader">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+   
+      <!-- START - Home part -->
+      <div class="outer-home">
+      
+         <!-- START - Home section -->
+         <section id="home">
+
+            <!-- Background picture(s) -->
+            <div id="vegas-background"></div>
+            
+            <!-- Overlay -->
+            <div class="global-overlay">
+               <canvas id="constellationel"></canvas>
+            </div>
+
+            <!-- Your logo -->
+            <img src='/static/img/logo.png' alt="" class="brand-logo text-intro opacity-0" />
+
+            <!-- START - Content -->
+            <div class="content">
+
+               <h1 class="text-intro opacity-0">우리의 6번째 가족: 구름이 (Cloud)</h1>
+            <!--   <h2 class="text-intro opacity-0">
+               <br>오픈까지 : 
+               <div id="getting-started" class="countdown-variant"></div></h2>
+               <BR>
+            -->
+            <BR>
+            <p class="text-intro opacity-0">미소가 예쁜 우리 가족, "구름이"를 소개합니다.<br>
+               같이 구름이에 대해 알아보아요.   </p>
+
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="#" id="open-more-info" data-target="right-side" class="light-btn text-intro opacity-0">구름이에 대해 더 알아보기</a>
+                     </li>
+                     <li>
+                        <a name-dialog="spondialog" class="action-btn text-intro opacity-0">구름이 후원하기</a>
+                     <BR> <BR> <BR>
+                     <li>
+                        <a href="{% url 'main'%}" data-target="right-side" class="light-btn text-intro opacity-0">메인 페이지</a>
+                     </li>
+                     <li>
+                        <a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">매거진 구독</a>
+                     </li>
+                  </ul>
+               </nav>
+
+            </div>
+            <!-- END - Content -->
+
+            <!--
+               OPEN - Player control
+            <nav id="player-nav">
+               <ul>
+                  <li data-toggle="tooltip" data-placement="bottom" data-title="Play" data-trigger="hover">
+                     <a onclick="$('#bgndVideo').playYTP()"><i class="fa fa-play"></i></a>
+                  </li>
+
+                  <li data-toggle="tooltip" data-placement="bottom" data-title="Pause" data-trigger="hover">
+                     <a onclick="$('#bgndVideo').pauseYTP()"><i class="fa fa-pause"></i></a>
+                  </li>
+
+                  <li class="full-play" data-toggle="tooltip" data-placement="bottom" data-title="Fullscreen" data-trigger="hover">
+                     <a class="expand-player"><i class="fa fa-expand"></i></a>
+                  </li>
+
+                  <li class="comp-play display-none" data-toggle="tooltip" data-placement="bottom" data-title="Reduce" data-trigger="hover">
+                     <a class="compress-player"><i class="fa fa-compress"></i></a>
+                  </li>
+
+               </ul>
+            </nav> CLOSE - Player control -->
+               
+            <!-- START - Bottom home -->
+            <div class="bottom-home">
+               
+               <!-- Social icons, replace # by your links -->
+               <div class="social-icons">
+
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+
+               </div>
+ 
+              <p class="copyright">
+                  © 멍스쉘터 - 멋쟁이사자처럼 7기
+               </p>
+
+            </div>
+            <!-- END - Bottom home -->
+
+         </section>
+         <!-- END - Home section -->
+
+      </div>
+      <!-- END - Home part -->
+
+      <!-- Transparent div used when more info part is opening, allow the user to click on the home to get back on it -->
+      <div class="close-right-part layer-left hide-layer-left"></div>
+
+      <!-- Skew left border info part -->
+      <div class="border-right-side hide-border"></div>
+
+      <!-- START - More Informations part -->
+      <section id="right-side" class="hide-right">
+
+         <!-- START - Content -->
+         <div class="content">
+
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DogLife &mdash; Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="{% static 'magazine/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'magazine/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'magazine/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'magazine/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'magazine/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'magazine/css/jquery.fancybox.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'magazine/css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'magazine/fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'magazine/css/aos.css' %}">
+
+	<link rel="stylesheet" href="{% static 'magazine/css/style.css' %}">
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+	<style>
+	h2.text-black{
+		font-family: "Nanum Gothic Coding";
+	}
+	</style>
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
+ 
+  <div class="site-wrap">          
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-left">
+                <a href="#" class="rotate10">
+                  <img src="{% static 'magazine/images/2.png' %}" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-right">
+                <h2 class="text-black">까미</h2>
+                <p class="mb-4">더운 여름 날 기찻길 위에서 발견 된 아이, 발견 당시 심각한 영양상태로 스스로 걷지도 못하는데...</p>
+                <p><a href="#" class="btn btn-primary">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-right">
+                <a href="#" class="rotate-reverse10">
+                  <img src="{% static 'magazine/images/3.png' %}" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-left">
+                <h2 class="text-black">복실이</h2>
+                <p class="mb-4">아무도 없는 산속에서 홀로 발견된 아이, 한눈에 봐도 피부상태가 심각해 보이는데...</p>
+                <p><a href="#" class="btn btn-primary">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+            <div class="col-12">
+              <div class="row">
+                <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-left">
+                  <a href="#" class="rotate10">
+                    <img src="{% static 'magazine/images/2.png' %}" alt="Image" class="img-fluid">
+                  </a>
+                </div>
+                <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-right">
+                  <h2 class="text-black">까미</h2>
+                  <p class="mb-4">더운 여름 날 기찻길 위에서 발견 된 아이, 발견 당시 심각한 영양상태로 스스로 걷지도 못하는데...</p>
+                  <p><a href="#" class="btn btn-primary">Read More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  <script src="{% static 'magazine/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'magazine/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'magazine/js/popper.min.js' %}"></script>
+  <script src="{% static 'magazine/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'magazine/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'magazine/js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'magazine/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'magazine/js/aos.js' %}"></script>
+  <script src="{% static 'magazine/js/jquery.fancybox.min.js' %}"></script>
+  <script src="{% static 'magazine/js/jquery.sticky.js' %}"></script>
+  <script src="{% static 'magazine/js/isotope.pkgd.min.js' %}"></script>
+
+  
+  <script src="{% static 'magazine/js/main.js' %}"></script>
+
+  </body>
+</html>
+
+                     
+                  
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/jquery.easings.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+      <!-- Newsletter plugin -->
+      <script src="{% static 'js/notifyMe.js' %}"></script>
+
+      <!-- Contact form plugin -->
+      <script src="{% static 'js/contact-me.js' %}"></script>
+
+      <!-- Slideshow/Image plugin -->
+      <script src="{% static 'js/vegas.js' %}"></script>
+
+      <!-- Scroll plugin -->
+      <script src="{% static 'js/jquery.mousewheel.js' %}"></script>
+
+      <!-- Custom Scrollbar plugin -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.js' %}"></script>
+
+      <!-- Popup Newsletter Form -->
+      <script src="{% static 'js/classie.js' %}"></script>
+      <script src="{% static 'js/dialogFx.js' %}"></script>
+
+      <!-- PhotoSwipe Core JS file -->
+      <script src="{% static 'js/photoswipe.js' %}"></script> 
+
+      <!-- PhotoSwipe UI JS file -->
+      <script src="{% static 'js/photoswipe-ui-default.js' %}"></script>
+
+      <!-- Constellation effect -->
+      <script src="{% static 'js/constellation.js' %}"></script> 
+      
+      <!-- Countdown plugin -->
+      <script src="{% static 'js/jquery.countdown.js' %}"></script>
+
+      <!-- Main JS File -->
+      <script src="{% static 'js/main.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/placeholder.js' %}"></script>
+      
+   </body>
+
+</html>
