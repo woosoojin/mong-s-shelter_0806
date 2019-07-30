@@ -1,12 +1,13 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 06/10/2018 08:32
+    Creation date: 04/04/2019 09:46
     */
 
     @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -36,10 +37,26 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-layers:before { content: "\f100"; }
-.flaticon-compass-symbol:before { content: "\f101"; }
-.flaticon-idea:before { content: "\f102"; }
+    .flaticon-body:before { content: "\f100"; }
+.flaticon-diet:before { content: "\f101"; }
+.flaticon-running:before { content: "\f102"; }
+.flaticon-woman:before { content: "\f103"; }
+.flaticon-gym:before { content: "\f104"; }
+.flaticon-meditation:before { content: "\f105"; }
+.flaticon-abs:before { content: "\f106"; }
+.flaticon-scale:before { content: "\f107"; }
+.flaticon-aerobic:before { content: "\f108"; }
+.flaticon-treadmill-machine-with-timer:before { content: "\f109"; }
+.flaticon-check-list:before { content: "\f10a"; }
     
-    $font-Flaticon-layers: "\f100";
-    $font-Flaticon-compass-symbol: "\f101";
-    $font-Flaticon-idea: "\f102";
+    $font-Flaticon-body: "\f100";
+    $font-Flaticon-diet: "\f101";
+    $font-Flaticon-running: "\f102";
+    $font-Flaticon-woman: "\f103";
+    $font-Flaticon-gym: "\f104";
+    $font-Flaticon-meditation: "\f105";
+    $font-Flaticon-abs: "\f106";
+    $font-Flaticon-scale: "\f107";
+    $font-Flaticon-aerobic: "\f108";
+    $font-Flaticon-treadmill-machine-with-timer: "\f109";
+    $font-Flaticon-check-list: "\f10a";

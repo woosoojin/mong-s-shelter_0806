@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 06/10/2018 08:32
+  	Creation date: 04/01/2019 13:45
   	*/
 
 
@@ -36,6 +36,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-layers:before { content: "\f100"; }
-.flaticon-compass-symbol:before { content: "\f101"; }
-.flaticon-idea:before { content: "\f102"; }
+.flaticon-body:before { content: "\f100"; }
+.flaticon-diet:before { content: "\f101"; }
+.flaticon-running:before { content: "\f102"; }
+.flaticon-woman:before { content: "\f103"; }
+.flaticon-gym:before { content: "\f104"; }
+.flaticon-meditation:before { content: "\f105"; }
+.flaticon-abs:before { content: "\f106"; }
+.flaticon-scale:before { content: "\f107"; }
+.flaticon-aerobic:before { content: "\f108"; }
+.flaticon-treadmill-machine-with-timer:before { content: "\f109"; }
+.flaticon-check-list:before { content: "\f10a"; }

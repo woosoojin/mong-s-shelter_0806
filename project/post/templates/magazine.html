@@ -2,13 +2,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>DogLife &mdash; Website Template by Colorlib</title>
+    <title>Mong's Shelter - 멍스쉘터</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="{% static 'magazine/css/bootstrap.min.css' %}">
@@ -25,14 +25,25 @@
 
     <link rel="stylesheet" href="{% static 'magazine/css/aos.css' %}">
 
-	<link rel="stylesheet" href="{% static 'magazine/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'magazine/css/style.css' %}">
+  
+  <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
 	
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
 	<style>
-	h2.text-black{
-		font-family: "Nanum Gothic Coding";
-	}
+	h2.name{
+    font-family: "Gamja Flower";
+    font-size: 40px;
+  }
+  h2.text-black{
+    font-family: "Nanum Pen Script";
+  }
 	</style>
     
   </head>
@@ -46,7 +57,7 @@
           <div class="col-md-5 mr-auto align-self-center text-center text-md-left">
             <div class="intro-text">
               <h1>Mong's Magazine</h1>
-              <p class="mb-4">&nbsp&nbsp어딘지도 모르는 곳에 버려져 오롯이 그 시간을 혼자 견뎌냈을 아이들입니다. 하지만 그 시간들을 씩씩하게 견뎌주었고, 건강한 모습도 되찾았답니다. 이제 아이들은 새로운 가족의 품으로 돌아가기만을 기다리고 있습니다.</p>
+              <p class="mb-4">&nbsp&nbsp&nbsp어딘지도 모르는 곳에 버려져 오롯이 그 시간을 혼자 견뎌냈을 아이들입니다. 하지만 그 시간들을 씩씩하게 견뎌주었고, 건강한 모습도 되찾았답니다. 이제 아이들은 새로운 가족의 품으로 돌아가기만을 기다리고 있습니다.</p>
 			  <p class="mb-4">아이들에게 다시 한 번 희망을 안겨주세요.</p>
               <p><a href="#" class="btn btn-primary">Subscribe</a></p>
             </div>
@@ -64,7 +75,7 @@
         <div class="row justify-content-center" data-aos="fade-up">
           <div class="col-lg-6 text-center heading-section mb-5">
             
-            <h2 class="text-black mb-2">아이들의 이야기를 함께 들어주세요.</h2>
+            <h2 class="text-black mb-2" style="font-size: 40px">아이들의 이야기를 함께 들어주세요.</h2>
             <p>You can save their life.</p>
           </div>
         </div>
@@ -79,7 +90,7 @@
                 </a>
               </div>
               <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-right">
-                <h2 class="text-black">까미</h2>
+                <h2 class="name">까미</h2>
                 <p class="mb-4">더운 여름 날 기찻길 위에서 발견 된 아이, 발견 당시 심각한 영양상태로 스스로 걷지도 못하는데...</p>
                 <p><a href="#" class="btn btn-primary">Read More</a></p>
               </div>
@@ -96,7 +107,7 @@
                 </a>
               </div>
               <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-left">
-                <h2 class="text-black">복실이</h2>
+                <h2 class="name">복실이</h2>
                 <p class="mb-4">아무도 없는 산속에서 홀로 발견된 아이, 한눈에 봐도 피부상태가 심각해 보이는데...</p>
                 <p><a href="#" class="btn btn-primary">Read More</a></p>
               </div>
@@ -129,7 +140,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Klift - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Mong's Shelter - 멍스쉘터</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -163,7 +174,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Mong's Shelter</a>
+	      <a class="navbar-brand" href="{% url 'main' %}">Mong's Shelter</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -172,14 +183,14 @@
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Adopting</a></li>
+            <li class="nav-item"><a href="{% url 'adopting' %}" class="nav-link">Adopting</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Adoption Review</a></li>
 	        	<li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Magazine</a></li>
+            <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
             <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
             <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
             <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
-            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
+            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>>
 	        </ul>
 	      </div>
 	    </div>

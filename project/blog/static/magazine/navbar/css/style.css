@@ -3554,7 +3554,8 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-brand {
   color: #fff; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #fff; }
+    color: #ffcdcd;
+    text-shadow: 3px 2px 2px grey; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5); }
@@ -7329,7 +7330,7 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #ffcdcd; }
+      color: #f18c8e; }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
@@ -7782,9 +7783,9 @@ h1, h2, h3, h4, h5,
     border: 1px solid #ffcdcd;
     color: #fff; }
     .btn.btn-primary:hover {
-      border: 1px solid #ffcdcd;
+      border: 1px solid #f18c8e;
       background: transparent;
-      color: #ffcdcd; }
+      color: #f18c8e; }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid #ffcdcd;
       background: transparent;
