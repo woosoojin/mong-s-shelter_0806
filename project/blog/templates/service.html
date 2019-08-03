@@ -1,90 +1,161 @@
-{% load static %}
-
+{% extends 'footer.html' %}
+{% load static%}
+{% block content %}
 <!DOCTYPE html>
-
-
 <html lang="en">
   <head>
-        <title>Klift - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Slim - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% static 'fifth/css/open-iconic-bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/animate.css' %}">
     
-    <link rel="stylesheet" href="{% static 'fifth/css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/owl.theme.default.min.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/magnific-popup.css' %}">
 
-    <link rel="stylesheet" href="{% static 'fifth/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/aos.css' %}">
 
-    <link rel="stylesheet" href="{% static 'fifth/css/ionicons.min.css' %}">
-
-    <link rel="stylesheet" href="{% static 'fifth/css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/jquery.timepicker.css' %}">
-
+    <link rel="stylesheet" href="{% static 'review/css/ionicons.min.css' %}">
     
-    <link rel="stylesheet" href="{% static 'fifth/css/flaticon.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/icomoon.css' %}">
-    <link rel="stylesheet" href="{% static 'fifth/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'review/css/style.css' %}">
 
-
-
-    <!---->
-   
   </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Mong's Shelter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+      
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
+                  <li class="nav-item"><a href="{% url 'adopting' %}" class="nav-link">Adopting</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Adoption Review</a></li>
+                  <li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
+                  <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
+                  <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+                  <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
+                  <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
+                  <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Mong's Shelter</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+          <section class="ftco-section bg-light" id="blog-section">
+            <div class="container">
+              <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry justify-content-end">
+                    <a href="single.html" class="block-20" style="background-image: url('../static/review/images/image_1.jpg');">
+                    </a>
+                    <div class="text float-right d-block">
+                      <div class="d-flex align-items-center pt-2 mb-4 topp">
+                        <div class="one mr-2">
+                          <span class="day">04</span>
+                        </div>
+                        <div class="two">
+                          <span class="yr">2019</span>
+                          <span class="mos">april</span>
+                        </div>
+                      </div>
+                      <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      <div class="d-flex align-items-center mt-4 meta">
+                        <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        <p class="ml-auto mb-0">
+                          <a href="#" class="mr-2">Admin</a>
+                          <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry justify-content-end">
+                    <a href="single.html" class="block-20" style="background-image: url('../static/review/images/image_2.jpg');">
+                    </a>
+                    <div class="text float-right d-block">
+                      <div class="d-flex align-items-center pt-2 mb-4 topp">
+                        <div class="one mr-2">
+                          <span class="day">04</span>
+                        </div>
+                        <div class="two">
+                          <span class="yr">2019</span>
+                          <span class="mos">april</span>
+                        </div>
+                      </div>
+                      <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      <div class="d-flex align-items-center mt-4 meta">
+                        <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        <p class="ml-auto mb-0">
+                          <a href="#" class="mr-2">Admin</a>
+                          <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry">
+                    <a href="single.html" class="block-20" style="background-image: url('../static/review/images/image_3.jpg');">
+                    </a>
+                    <div class="text float-right d-block">
+                      <div class="d-flex align-items-center pt-2 mb-4 topp">
+                        <div class="one mr-2">
+                          <span class="day">04</span>
+                        </div>
+                        <div class="two">
+                          <span class="yr">2019</span>
+                          <span class="mos">april</span>
+                        </div>
+                      </div>
+                      <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      <div class="d-flex align-items-center mt-4 meta">
+                        <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                        <p class="ml-auto mb-0">
+                          <a href="#" class="mr-2">Admin</a>
+                          <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+  <!-- loader -->
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
-	        	<li class="nav-item active"><a href="services.html" class="nav-link">Services</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-
-  
-  <!--navbar2-->
- 
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="{% static 'fifth/js/jquery.min.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'fifth/js/popper.min.js' %}"></script>
-  <script src="{% static 'fifth/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'fifth/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'fifth/js/aos.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'fifth/js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'fifth/js/jquery.timepicker.min.js' %}"></script>
-  <script src="{% static 'fifth/js/scrollax.min.js' %}"></script>
+  <script src="{% static 'review/js/jquery.min.js' %}"></script>
+  <script src="{% static 'review/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'review/js/popper.min.js' %}"></script>
+  <script src="{% static 'review/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'review/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'review/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'review/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'review/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'review/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'review/js/aos.js' %}"></script>
+  <script src="{% static 'review/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'review/js/scrollax.min.js' %}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'fifth/js/google-map.js' %}"></script>
-  <script src="{% static 'fifth/js/main.js' %}"></script>
-  <!--Team member-->
+  <script src="{% static 'review/js/google-map.js' %}"></script>
+  
+  <script src="{% static 'review/js/main.js' %}"></script>
+    
   </body>
- 
 </html>
+{% endblock %}
