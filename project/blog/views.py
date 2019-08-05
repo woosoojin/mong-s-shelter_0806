@@ -24,4 +24,10 @@ def magazine_de(request):
     return render(request, 'magazine_de.html')
 
 def magazine_de2(request):
-    return render(request, 'magazine_de2.html')    
+    return render(request, 'magazine_de2.html')
+    
+def magazine_de3(request):
+    return render(request, 'magazine_de3.html')
+
+def game(request):
+    return render(request, 'game.html')

@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+    <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
+
+    <link rel="stylesheet" href="{% static 'game/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'game/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'game/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'game/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'game/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/jquery.timepicker.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'game/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'loader/style.css' %}">
+
+  <head>
+    <style>
+      .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    
+      a.btn{
+        font-family: "Hi Melody";
+      }
+    </style>
+    <script>
+        var game = 0;
+        function changetogame0(){
+            game = 0;
+            document.getElementById("gamename").innerHTML = '<a id="bling" class="btn btn-primary py-3 px-5" style="font-size: 30px" style="><strong>멍스터치</strong> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a id="bling" class="btn btn-primary py-3 px-5" onclick="changetogame1()"; style="font-size: 30px">탱크팡팡</a>';
+            document.getElementById("game").innerHTML = ' <iframe style="width:978px;height:550px;text-align:center;border:0;margin:0 auto;" src="https://agitated-jones-64553f.netlify.com/" name="Englishacorn" width="760" height="200" frameborder="0" scrolling="no" ><p>Your browser does not support iframes.</p></iframe>';
+        }
+        function changetogame1(){
+            game = 1;
+            document.getElementById("gamename").innerHTML = '<a id="bling" class="btn btn-primary py-3 px-5" onclick="changetogame0()"; style="font-size: 30px">멍스터치 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a id="bling" class="btn btn-primary py-3 px-5" style="font-size: 30px"><strong>탱크팡팡</strong> </a>';
+            document.getElementById("game").innerHTML = ' <iframe style="width:978px;height:550px;text-align:center;border:0;margin:0 auto;" src="https://boring-turing-848a8a.netlify.com/" name="Englishacorn" width="760" height="200" frameborder="0" scrolling="no" ><p>Your browser does not support iframes.</p></iframe>';
+        }
+          </script>
+  </head>
+
+  <body>
+      <div id="preloader">
+          <i class="preloader"></i>
+          <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
+          <div class="container">
+            <a class="navbar-brand" href="{% url 'main' %}">Mong's Shelter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+    
+            <div class="collapse navbar-collapse" id="ftco-nav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="{% url 'adopting' %}" class="nav-link">Adopting</a></li>
+                <li class="nav-item"><a href="{% url 'review' %}" class="nav-link">Adoption Review</a></li>
+                <li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
+                <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
+                <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+                <li class="nav-item"><a href="{% url 'game' %}" class="nav-link">Game</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
+                <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
+                <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- END nav -->     
+                  
+        <section class="home-slider js-fullheight owl-carousel">
+            <div class="slider-item js-fullheight" style="background-image:url(../../static/about/images/two-dogs-playing-tug-of-war-with-disc.jpg);">
+                <div class="overlay"></div>
+              <div class="container">
+                <div class="row slider-text justify-content-center align-items-center">
+                  <div class="col-md-7 col-sm-12 text-center ftco-animate">
+                      <h1 class="mb-3 mt-5 bread">Game</h1>
+                      <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'main' %}">Home</a></span> <span>game</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <br><br><br>
+          <div class="container">
+              <div class="row justify-content-center mb-5 pb-2">
+                <div class="col-md-7 heading-section ftco-animate">
+                  <h2 class="mb-4" style="text-align: center">Mong's Game</h2>
+                  <p style="text-align: center">여러분에게 소소한 재미를 드리고자 마련한 공간입니다. <br> 멍스쉘터는 여러분들의 도움과 관심에 보답할 수 있도록 꾸준히 노력하겠습니다.</p>
+                </div>
+              </div>
+            </div>
+
+          <section class="ftco-section ftc-no-pb">
+              <div class="container">
+                  <div class="row no-gutters justify-content-center">
+                      <div class="col-md-10">
+                  <p id="gamename" style="text-align: center">
+                      <a id="bling" class="btn btn-primary py-3 px-5" style="font-size: 30px"><strong>멍스터치</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a id="bling" class="btn btn-primary py-3 px-5" onclick="changetogame1()" style="font-size: 30px">탱크팡팡</a>
+                  </p>
+                  <BR>
+                  <p id="game" style="text-align: center">
+                      <iframe style="width:978px;height:550px;text-align:center;border:0;margin:0 auto;" src="https://agitated-jones-64553f.netlify.com/" name="Englishacorn" width="760" height="200" frameborder="0" scrolling="no" >
+                          <p>Your browser does not support iframes.</p>
+                      </iframe>
+                    
+                  </p>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Mong's Shelter</h2>
+              <p>저희 웹 사이트를 이용해주셔서 감사합니다. 앞으로도 더 노력하는 멍스쉘터가 되겠습니다.</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'main' %}">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About</a></li>
+                <li><a href="{% url 'review' %}">Adoption Review</a></li>
+                <li><a href="{% url 'q&a' %}">Q & A</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'adopting' %}">Adopting</a></li>
+                <li><a href="{% url 'school_dog' %}">Mong's School</a></li>
+                <li><a href="{% url 'magazine' %}">Magazine</a></li>
+                <li><a href="#">Game</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+                  <li><a href="mailto: woosj98@gmail.com"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+                  <li><a href="mailto: wsj1998@naver.com"><span class="icon icon-envelope"></span><span class="text">wsj1998@naver.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mong's Shelter All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="{% static 'game/js/jquery.min.js' %}"></script>
+    <script src="{% static 'game/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'game/js/popper.min.js' %}"></script>
+    <script src="{% static 'game/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'game/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'game/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'game/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'game/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'game/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'game/js/aos.js' %}"></script>
+    <script src="{% static 'game/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'game/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'game/js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'game/js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'game/js/google-map.js' %}"></script>
+    <script src="{% static 'game/js/main.js' %}"></script>
+            
+    <script src="{% static 'loader/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'loader/js/active.js' %}"></script>
+  </body>

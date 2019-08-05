@@ -8042,8 +8042,8 @@ h1, h2, h3, h4, h5,
             position: relative; }
             .owl-carousel.home-slider .slider-item .slider-text .one-forth .text:after {
               position: absolute;
-              top: -7%;
-              left: 50%;
+              top: -17%;
+              left: 37%;
               right: 0;
               bottom: 0;
               content: '';
@@ -15642,7 +15642,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important; }
+  margin-bottom: 0rem !important; }
 
 .ml-5,
 .mx-5 {

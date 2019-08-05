@@ -26,6 +26,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{% static 'Mag/css/animate.css' %}">
@@ -41,44 +42,43 @@
 
 	<link rel="stylesheet" href="{% static 'Mag/css/style.css' %}">
 
-
 	<!-- Modernizr JS -->
 	<script src="{% static 'Mag/js/modernizr-2.6.2.min.js' %}"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-    <![endif]-->
+
+	<link rel="stylesheet" href="{% static 'loader/style.css' %}">
     
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <style>
         h2.magazine-title{
             font-family: "Gamja Flower";
-        }
-    </style>
+		}
+		a.brand-name{
+			font-family: "Pacifico";
+		}
+	</style>
+	
 	</head>
 	<body>
+	<div id="preloader">
+        <i class="preloader"></i>
+        <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+	  </div>
 
 	<nav id="colorlib-main-nav" role="navigation">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
 		<div class="js-fullheight colorlib-table">
 			<div class="colorlib-table-cell js-fullheight">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
-							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
-						</div>
-					</div>
-				</div>
+				 <ul><a href="{% url 'main' %}">Home</a></ul>
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li><a href="index.html">까미</a></li>
-							<li class="active"><a href="work.html">복실이</a></li>
-							<li><a href="blog.html">Blog</a></li>
+							<li><a href="{% url 'magazine_de3' %}">까미</a></li>
+							<li class="active"><a href="{% url 'magazine_de2' %}">복실이</a></li>
+							<li><a href="{% url 'magazine_de3' %}">블레드</a></li>
 							<li><a href="about.html">지난호 매거진 보기</a></li>
 							<li><a href="contact.html">후원하기</a></li>
 						</ul>
@@ -123,7 +123,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="index.html">Mongazine</a>
+							<a class="colorlib-logo" href="{% url 'magazine_de2' %}" style="font-size: 35px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Mongazine</a>
+							<a class="brand-name" href="{% url 'main' %}" style="font-size: 30px">Mong's Shelter</a>
 						</div>
 						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 					</div>
@@ -335,5 +336,6 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="{% static 'Mag/js/main.js' %}"></script>
 
+	<script src="{% static 'loader/js/active.js' %}"></script>
 	</body>
 </html>

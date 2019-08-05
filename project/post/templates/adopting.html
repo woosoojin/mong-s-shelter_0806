@@ -18,7 +18,9 @@
 
       <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
 
+      <link rel="stylesheet" href="{% static 'adopt/main.css' %}">
   <style>
     .ftco-navbar-light {
       background: transparent !important;
@@ -39,10 +41,13 @@
     h4.color-green{
       font-family: "Gamja Flower";
     }
+    a.primary-btn{
+      font-family: "Gamja Flower";
+    }
   </style>
  
   </head>
-  <body>    
+  <body>
       <section class="home-slider js-fullheight owl-carousel">
 
           <div class="slider-item js-fullheight" style="background-image:url(../../static/adopt/images/puppies_waiting_dogs_11451_1920x1080.jpg);">
@@ -91,7 +96,7 @@
     <br><br><br>
         <div class="container">
             <div class="row no-gutters">
-              <div class="col-md-5 p-md-5 img img-2" style="background-image: url(../static/adopt/images/bigstock-Mail-Dog-34566944.jpg);">
+              <div class="col-md-5 p-md-5 img img-2" style="background-image: url(../static/adopt/images/bigstock-Mail-Dog-34566944.jpg); height: 400px;">
               </div>
               <div class="col-md-7 wrap-about pb-md-5 ftco-animate fadeInUp ftco-animated">
                 <div class="heading-section mb-5 pl-md-5 heading-section-with-line">
@@ -111,11 +116,10 @@
                 </div>
               </div>
             </div>
-            <br><br><br>
           </div>
 
-          <br>
-          <br>
+
+          
           <div class="heading-section mb-md-5 pl-md-5 heading-section-with-line">
             <div class="pr-md-5 mr-md-5">
               <h2 class="mb-4">아이들 입양하기</h2>
@@ -141,9 +145,7 @@
 	
 	<!-- Stylesheets -->
 	<link href="{% static 'adopt/common-css/ionicons.css' %}" rel="stylesheet">
-	
 	<link href="{% static 'adopt/04_Blog/css/styles.css' %}" rel="stylesheet">
-	
 	<link href="{% static 'adopt/04_Blog/css/responsive.css' %}" rel="stylesheet">
 	
 </head>
@@ -158,6 +160,9 @@
               <h4 class="color-green margin-b-5" style="font-size: 30px">{{adopts.name}}<br></h4>
               <h4 class="description" style="color: white; font-size: 30px">{{adopts.description}}</h4>
             </div>
+            <div class="button" style="text-align: center; padding-bottom: 30px;">
+                <a href="#" class="primary-btn offwhite" style="font-size: 20px;"><strong>{{adopts.name}}</strong> 입양하기</a>
+            </div>
           </a>
           <a class="blog-post full" style="background-image:url({{adopts.image2.url}});" href="#">
               <img src="{{adopts.image2.url}}" alt="">
@@ -165,29 +170,34 @@
                 <h4 class="color-green margin-b-5" style="font-size: 30px">{{adopts.name2}}<br></h4>
                 <h4 class="description" style="color: white; font-size: 30px">{{adopts.description2}}</h4>
               </div>
+              <div class="button" style="text-align: center; padding-bottom: 20px;">
+                  <a href="#" class="primary-btn offwhite" style="font-size: 20px"><strong>{{adopts.name2}}</strong> 입양하기</a>
+              </div>
             </a>
         </div>
       {% endfor %}
   </section><!-- main-section -->
   
-
+<br>
   <div class="col text-center">
       <div class="block-27">
         <ul>
         {% if posts.has_previous %}
-        <li><a href="?page={{posts.previous_page_number}}">&lt;</a></li>
+        <li><a href="?page={{posts.previous_page_number}}">Pre</a></li>
         {% endif %}
 
         {% if posts.has_next %}
-        <li><a href="?page={{posts.next_page_number}}">&gt;</a></li>
+        <li><a href="?page={{posts.next_page_number}}">Next</a></li>
         {% endif %}
         </ul>
       </div>
   </div>
+  <br>
 
 	<script src="{% static 'adopt/common-js/jquery-3.2.1.min.js' %}"></script>
 	<script src="{% static 'adopt/common-js/scripts.js' %}"></script>
-	
+  
+  
 </body>
 {% endblock %}
 </html>

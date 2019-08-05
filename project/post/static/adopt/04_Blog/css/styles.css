@@ -35,26 +35,19 @@ body{ font-size: 15px; font-family: "Roboto", Arial, sans-serif; margin: 0; font
 	 -webkit-box-sizing: border-box; box-sizing: border-box;
 	width: calc(100% - 100px); position: relative; z-index: 1; color: #333; }
 
-h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, inpot, button{ margin: 0; padding: 0; }
+h1, h3, h4, h5, h6, ul, li, img, inpot, button{ margin: 0; padding: 0; }
 
-h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+h1,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
 
-h1,h2,h3{ font-family: "Roboto", Arial, sans-serif; }
-
-p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #777; }
+h1,h3{ font-family: "Roboto", Arial, sans-serif; }
 
 h1{ font-size: 4em; line-height: 1; }
-h2{ font-size: 2.2em; line-height: 1.1; }
 h3{ font-size: 1.8em; }
 h4{ font-size: 1.3em; }
 h5{ font-size: 1em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
 
-a, button{ display: inline-block; text-decoration: none; color: inherit; line-height: 1; 
-	-webkit-transition: all .25s ease-in-out; transition: all .25s ease-in-out; }
-
-a:focus, a:active, a:hover,
-button:focus, button:active, button:hover,
+a:focus, a:active, button:focus, button:active, button:hover,
 a b.light-color:hover{ text-decoration: none; color: #37D583; }
 
 b{ font-weight: 600; }
@@ -63,8 +56,6 @@ img{ width: 100%; }
 
 li{ list-style: none; display: inline-block; }
 
-span{ display: inline-block; }
-
 button{ outline: 0; border: 0; background: none; cursor: pointer; }
 
 .icon{ font-size: 1.1em; display: inline-block; line-height: inherit; }
@@ -72,16 +63,6 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 [class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
 
 b.max-bold{ font-weight: 700; }
-
-*, *::before, *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
-*, *::before, *::after {
-    -webkit-box-sizing: inherit;
-	box-sizing: inherit;} 
-
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
@@ -165,7 +146,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .blog-area .blog-post{ height: calc(50% - 15px); width: 100%; float: left; overflow: hidden; 
 	position: relative; background-size: cover; }
 
-.blog-area .blog-post:first-child{ margin-bottom: 15px; }
+.blog-area .blog-post:first-child{ margin-bottom: 3px; }
 .blog-area .blog-post:last-child{ margin-top: 15px; }
 
 .blog-area .blog-post img{ display: none; }
@@ -189,30 +170,3 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .blog-post:hover .blog-info{ opacity: 1; }
 
 .blog-post:hover .blog-info:after{ -webkit-transform: translateY(0); transform: translateY(0); }
-
- 
-/* ---------------------------------
-5. FOOTER
---------------------------------- */
-
-footer{ position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; text-align: center; }
-
-footer .copyright{ font-size: .95em; line-height: 60px; float: left; }
-
-
-footer .show-thumb-btn{ height: 30px; line-height: 30px; margin: 15px 0; position: relative; }
-
-footer .show-thumb-btn:after{ content:''; position: absolute; bottom: 3px; top: 3px; left: -2px; 
-	right: -2px; z-index: -1; background: #aaa; 
-	-webkit-transform-origin: bottom; transform-origin: bottom; 
-	-webkit-transform: scaleY(.15); transform: scaleY(.15);
-	-webkit-transition: all .2s ease; transition: all .2s ease; }
-
-footer .show-thumb-btn:hover{ color: #fff; }
-footer .show-thumb-btn:hover:after{ background: #333;  
-	-webkit-transform: scaleY(1); transform: scaleY(1); }
-
-
-footer .social-icons{ float: right; }
-
-footer .social-icons > li > a{ height: 60px; line-height: 60px; margin-left: 20px; }

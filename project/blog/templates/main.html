@@ -28,11 +28,47 @@
     <link rel="stylesheet" href="{% static 'navbar/css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'navbar/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'navbar/css/style.css' %}">
-    
-    <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
 
+    <!--countdown-->
+    <link rel="stylesheet" href="{% static 'countdown/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'countdown/css/main.css' %}">
+
+    <!--donation-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
+  
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="{% static 'donation/css/main.css' %}">
+
+    <!--loader-->
+    <link rel="stylesheet" href="{% static 'loader/style.css' %}">
+
+    <!--process-->
+    <link rel="stylesheet" href="{% static 'process/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'process/css/style.css' %}">
+    <style>
+      h6.text-uppercase{
+        font-family: "Gamja Flower";
+        font-size: 35px;
+      }
+      h3.d-name{
+        font-family: "Nanum Gothic Coding";
+        font-size: 23px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
+      <div id="preloader">
+          <i class="preloader"></i>
+          <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+      </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
 	    <div class="container">
 	      <a class="navbar-brand" href="{% url 'main'%}">Mong's Shelter</a>
@@ -49,6 +85,7 @@
 	        	<li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
             <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
             <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+            <li class="nav-item"><a href="{% url 'game' %}" class="nav-link">Game</a></li>
             <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
             <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
             <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
@@ -56,7 +93,6 @@
 	      </div>
 	    </div>
 	  </nav>
-
     <section class="home-slider js-fullheight owl-carousel">
       <div class="slider-item js-fullheight" style="background-image:url(../static/navbar/images/32350-dog_breed-labrador_retriever-dog_like_mammal-pet-retriever-1920x1080.jpg);">
       	<div class="overlay"></div>
@@ -83,51 +119,50 @@
         </div>
       </div>
     </section>
-		
+
 		<section class="ftco-services bg-light">
 			<div class="container">
 				<div class="row">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-idea"></span>
+                <i class="fas fa-heartbeat" style="color: white; font-size: 50px"></i>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">구조하기</h3>
-                <p>길거리에 버려진 아이들이 더 이상은 차가운 시멘트 바닥에서 지내지 않도록 돕겠습니다.</p>
+                <h3 class="heading">케어하기</h3>
+                <p>아이들이 더 이상 차가운 시멘트 바닥에서 지내지 않도록, <br>아이들이 받은 상처가 아물 수 있도록 돕겠습니다.</p>
               </div>
             </div>      
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-compass-symbol"></span>
+                  <i class="far fa-heart" style="color: white; font-size: 50px"></i>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">케어하기</h3>
-                <p>아이들이 받은 상처가 아물 수 있도록 돕겠습니다.</p>
+                <h3 class="heading">입양보내기</h3>
+                <p>아이들이 새로운 가족의 품으로 돌아갈 수 있도록 최선을 다하겠습니다.</p>
               </div>
             </div>    
           </div>
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-layers"></span>
+            		<i class="fas fa-clock" style="color: white; font-size: 50px"></i>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">입양보내기</h3>
-                <p>아이들이 새로운 가족의 품으로 돌아갈 수 있도록 최선을 다하겠습니다.</p>
+                <h3 class="heading">사후관리</h3>
+                <p>입양 후에도 아이들이 행복할 수 있도록 노력하겠습니다.</p>
               </div>
             </div>      
           </div>
         </div>
 			</div>
-		</section>
-
-		<section class="ftco-section ftc-no-pb">
+    </section>
+    <section class="ftco-section ftc-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2" style="background-image: url(../static/navbar/images/Youve-Got-a-Friend-In-Fido.jpg);">
+					<div class="col-md-5 p-md-5 img img-2" style="background-image: url(../static/navbar/images/Youve-Got-a-Friend-In-Fido.jpg); height: 400px; margin-top: 30px">
 					</div>
 					<div class="col-md-7 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section mb-5 pl-md-5 heading-section-with-line">
@@ -140,38 +175,294 @@
 							<p>저희 멍스쉘터는 아이들의 쉼터가 되겠습니다.</p>
                             <p>저희 멍스쉘터는 아이들이 받은 상처를 치유해줄 수 있는 병원이 되겠습니다.</p>
                             <P>저희 멍스쉘터는 아이들에게 영원을 약속할 가족을 찾아주겠습니다.</P>
-							<p><a href="#" class="btn-custom">Learn More <span class="ion-ios-arrow-forward"></span></a></p>
+              <p style="text-align: center">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="{% url 'adopting' %}" class="btn-custom">입양하기 <span class="ion-ios-arrow-forward"></span></a></p>
 						</div>
 					</div>
 				</div>
 			</div>
     </section>
-    <br>
-    <br>
-    
+
+    <section class="ftco-section ftco-schedule" id="schedule-section">
+        <div class="container">
+          <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+              <span class="subheading">HOW to adopt</span>
+              <h2 class="mb-4">Adoption Process</h2>
+              <p>아이들을 가족으로 받아들이기 위해서는 많은 노력, 시간, 책임감 등이 요구됩니다.<br>하지만 이를 간과하고 아이들을 입양하여 많은 문제들이 발생하고 있습니다.<br>이에 저희 멍스쉘터는 꼼꼼한 입양절차를 지향하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="ftco-schedule">
+            <div class="row">
+              <div class="col-md-4 nav-link-wrap">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link ftco-animate active" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8" role="tab" aria-controls="v-pills-8" aria-selected="true">Step 1<span>Information</span></a>
+  
+                  <a class="nav-link ftco-animate" id="v-pills-9-tab" data-toggle="pill" href="#v-pills-9" role="tab" aria-controls="v-pills-9" aria-selected="false">Step 2<span>Schooling</span></a>
+  
+                  <a class="nav-link ftco-animate" id="v-pills-10-tab" data-toggle="pill" href="#v-pills-10" role="tab" aria-controls="v-pills-10" aria-selected="false">Step 3<span>Matching</span></a>
+  
+                  <a class="nav-link ftco-animate" id="v-pills-11-tab" data-toggle="pill" href="#v-pills-11" role="tab" aria-controls="v-pills-11" aria-selected="false">Step 4<span>Post Management</span></a>
+                </div>
+              </div>
+              <div class="col-md-8 tab-wrap">
+                
+                <div class="tab-content" id="v-pills-tabContent">
+  
+                  <div class="tab-pane fade show active" id="v-pills-8" role="tabpanel" aria-labelledby="day-8-tab">
+                    <div class="coach-wrap ftco-animate d-sm-flex">
+                      <div class="text pl-md-5">
+                        <span class="time">STEP 01</span>
+                        <h2><a href="#">Information</a></h2>
+                            <p>&nbsp&nbsp예비 부모님의 환경, 성향, 자격 등을 검증하기 위한 단계입니다. 이는 'Adopting'페이지의 입양신청서 작성을 통해 이루어집니다. 또한 'Adopting'페이지에서는 저희가 보호하고 있는 아이들의 모습을 보실 수 있습니다.</p>
+                            <div style="text-align: right">
+                                <a href="{% url 'adopting' %}" class="btn-custom">아이들 보러가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                                <br>
+                                <a href="#" class="btn-custom">입양신청서 작성하기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="tab-pane fade" id="v-pills-9" role="tabpanel" aria-labelledby="v-pills-day-9-tab">
+                    <div class="coach-wrap ftco-animate d-sm-flex">
+                      <div class="text pl-md-5">
+                        <span class="time">STEP 02</span>
+                        <h2><a href="#">Schooling</a></h2>
+                        <p>&nbsp&nbsp아이들을 입양하기 전, 예비부모님께서 실질적인 준비를 하실 수 있는 '선택적' 단계입니다. 'Mong's School'페이지를 통해 이수하실 수 있으며, Mong's School에서는 실질적인 다양한 정보들을 제공하고 있습니다. 뿐만 아니라 이 단계를 통해 여러분이 원하는 아이들과의 Matching확률을 높일 수 있습니다.</p>
+                          <div style="text-align: right">  
+                            <a href="{% url 'school_dog' %}" class="btn-custom">Mong's School 가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="tab-pane fade" id="v-pills-10" role="tabpanel" aria-labelledby="v-pills-day-10-tab">
+                    <div class="coach-wrap ftco-animate d-sm-flex">
+                      <div class="text pl-md-5">
+                        <span class="time">SETP 03</span>
+                        <h2><a href="#">Matching</a></h2>
+                        <p>&nbsp&nbspStep 1과 Step2의 정보들을 기반으로 하여, 여러분과 아이들의 Matching이 이루어지는 단계입니다. Matching결과는 매달 30일에 발표됩니다.</p>
+                        <div style="text-align: right">  
+                             <a href="{% url 'school_dog' %}" class="btn-custom">Matching결과 보러가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="tab-pane fade" id="v-pills-11" role="tabpanel" aria-labelledby="v-pills-day-11-tab">
+                    <div class="coach-wrap ftco-animate d-sm-flex">
+                      <div class="text pl-md-5">
+                        <span class="time">STEP 04</span>
+                        <h2><a href="#">Post Management</a></h2>
+                        <p>&nbsp&nbsp멍스쉘터를 통해 입양을 하신 분들께서는 입양후기를 정기적으로 작성해주셔야 합니다. 저희는 'Adoption Review'페이지에 올라온 여러분들의 게시글을 통해 아이들의 근황을 파악하게 됩니다. 그리고 이는 입양을 고민하시는 예비부모님께도 많은 도움이 됩니다.
+                               또한 정기적인 후기작성을 하셔야만 멍스쉘터의 지속적인 지원을 받으실 수 있습니다.</p>
+                               <div style="text-align: right">  
+                                   <a href="{% url 'review' %}" class="btn-custom">Review 작성하기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                                </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">HOW to Donate</span>
+            <h2 class="mb-4">Donation</h2>
+            <p>여러분의 소중한 후원금은 전적으로 아이들을 치료하고, 케어하는데 사용됩니다.<br> 여러분의 믿음에 보답할 수 있도록 정직하게 아이들을 보살피겠습니다.</p>
+          </div>
+        </div>
+      <section class="causes-area section-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="single-cause">
+                  <div class="top">
+                    <div class="thumb">
+                      <img class="c-img img-fluid" src="{% static 'Mag/images/1.png' %}" alt="">
+                    </div>
+                    <a href="{% url 'magazine_de' %}">
+                      <h3 class="d-name"><strong>까미</strong></h3>
+                    </a>
+                    <p class="text">심각한 영양상태로 건강이 악화된 까미에게<br> 후원해주세요.</p>
+                  </div>
+                  <div class="middle">
+                      <div class="skill_main">
+                        <div class="skill_item">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar1" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex" style="margin-left: 40px">
+                        <div class="mr-50" style="text-align: center">
+                          <h5><span class="counter">55</span>%</h5>
+                          <p style="text-align: center">Funded</p>
+                        </div>
+                        <div class="mr-50" style="text-align: center">
+                          <h5>₩<span class="counter">300,000</span></h5>
+                          <p style="text-align: center">Pledged</p>
+                        </div>
+                        <div class="mr-50" style="text-align: center">
+                          <h5><span class="counter">21</span></h5>
+                          <p style="text-align: center">D-day</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                      <a href="{% url 'magazine_de' %}" class="primary-btn offwhite" style="font-size: 15px">View Details</a>
+                      <a href="#" class="primary-btn primary-btn1" style="font-size: 15px">Donate Here</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                  <div class="single-cause">
+                    <div class="top">
+                      <div class="thumb">
+                        <img class="c-img img-fluid" src="{% static 'Mag/images/2/3.png' %}" alt="">
+                      </div>
+                      <a href="#">
+                        <h3 class="d-name"><strong>복실이</strong></h3>
+                      </a>
+                      <p class="text">심한 상처와 피부병을 앓고 있는 복실이를 <br>도와주세요.</p>
+                    </div>
+                    <div class="middle">
+                        <div class="skill_main">
+                          <div class="skill_item">
+                            <div class="progress">
+                              <div class="progress-bar progress-bar2" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex" style="margin-left: 40px">
+                          <div class="mr-50" style="text-align: center">
+                            <h5><span class="counter">30</span>%</h5>
+                            <p style="text-align: center">Funded</p>
+                          </div>
+                          <div class="mr-50" style="text-align: center">
+                            <h5>₩<span class="counter">600,000</span></h5>
+                            <p style="text-align: center">Pledged</p>
+                          </div>
+                          <div class="mr-50" style="text-align: center">
+                            <h5><span class="counter">21</span></h5>
+                            <p style="text-align: center">D-day</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                        <a href="{% url 'magazine_de2' %}" class="primary-btn offwhite" style="font-size: 15px">View Details</a>
+                        <a href="#" class="primary-btn primary-btn1" style="font-size: 15px">Donate Here</a>
+                      </div>
+                  </div>
+                </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-cause">
+                  <div class="top">
+                    <div class="thumb">
+                      <img class="c-img img-fluid" src="{% static 'Mag/images/3/11.png' %}" alt="">
+                    </div>
+                    <a href="#">
+                      <h3 class="d-name"><strong>블레드</strong></h3>
+                    </a>
+                    <p class="text">교통사고로 인해 골절이 된 블레드의 다리를 <br>고쳐주세요.</p>
+                  </div>
+                  <div class="middle">
+                      <div class="skill_main">
+                        <div class="skill_item">
+                          <div class="progress">
+                            <div class="progress-bar progress-bar3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex" style="margin-left: 25px">
+                        <div class="mr-50" style="text-align: center">
+                          <h5><span class="counter">85</span>%</h5>
+                          <p style="text-align: center">Funded</p>
+                        </div>
+                        <div class="mr-50" style="text-align: center">
+                          <h5>₩<span class="counter">1,200,000</span></h5>
+                          <p style="text-align: center">Pledged</p>
+                        </div>
+                        <div class="mr-50" style="text-align: center">
+                          <h5><span class="counter">21</span></h5>
+                          <p style="text-align: center">D-day</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                      <a href="{% url 'magazine_de3' %}" class="primary-btn offwhite" style="font-size: 15px">View Details</a>
+                      <a href="#" class="primary-btn primary-btn1" style="font-size: 15px">Donate Here</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- End faq Area -->
+
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <span class="subheading">D-Day</span>
+          <h2 class="mb-4">Donation</h2>
+          <p>매월 30일은, 매칭 결과가 발표되는 날입니다!<br>
+            지금은 예비 부모님께서 제공해주신 정보와 아이들의 정보를 열심히 분석하여 매칭이 이루어지고 있는 중입니다.<br>
+            아이들이 조금이라도 더 행복할 수 있도록 최선을 다하는 멍스쉘터가 되겠습니다.</p>
+        </div>
+      </div>
+    <section class="countdown-area pt-100">
+        <div class="container">
+            <div class="row justify-content-center no-padding">
+                <div class="col-lg-10">
+                    <div class="row clock_sec align-items-end clockdiv" id="clockdiv">
+                            <div class="col clockinner1 clockinner">
+                                <span class="days">26</span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <span class="hours">24</span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div class="col counter-img">
+                                <img src="{% static 'countdown/img/dog.jpg' %}" style="height: 170px" alt="">
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <span class="minutes">00</span>
+                                <div class="smalltext">Minutes</div>
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <span class="seconds">00</span>
+                                <div class="smalltext">Seconds</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+    </section>
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
           <div class="row mb-5">
             <div class="col-md">
               <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Mong's Shelter</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
+                <p>저희 웹 사이트를 이용해주셔서 감사합니다. 앞으로도 더 노력하는 멍스쉘터가 되겠습니다.</p>
               </div>
             </div>
             <div class="col-md">
               <div class="ftco-footer-widget mb-4 ml-md-4">
                 <h2 class="ftco-heading-2">Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="{% url 'main' %}">Home</a></li>
+                  <li><a href="{% url 'about_us' %}">About</a></li>
+                  <li><a href="{% url 'review' %}">Adoption Review</a></li>
+                  <li><a href="{% url 'q&a' %}">Q & A</a></li>
                 </ul>
               </div>
             </div>
@@ -179,11 +470,10 @@
                <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Services</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Architectural Design</a></li>
-                  <li><a href="#">Interior Design</a></li>
-                  <li><a href="#">Exterior Design</a></li>
-                  <li><a href="#">Lighting Design</a></li>
-                  <li><a href="#">AutoCAD Service</a></li>
+                  <li><a href="{% url 'adopting' %}">Adopting</a></li>
+                  <li><a href="{% url 'school_dog' %}">Mong's School</a></li>
+                  <li><a href="{% url 'magazine' %}">Magazine</a></li>
+                  <li><a href="#">Game</a></li>
                 </ul>
               </div>
             </div>
@@ -192,9 +482,9 @@
                 <h2 class="ftco-heading-2">Have a Questions?</h2>
                 <div class="block-23 mb-3">
                   <ul>
-                    <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+                    <li><a href="mailto: woosj98@gmail.com"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+                    <br>
+                    <li><a href="mailto: wsj1998@naver.com"><span class="icon icon-envelope"></span><span class="text">wsj1998@naver.com</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -204,34 +494,41 @@
             <div class="col-md-12 text-center">
   
               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mong's Shelter All rights reserved
     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
           </div>
         </div>
       </footer>
-      
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#ffcdcd"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ffcdcd"/></svg></div>
 
-
-  <script src="{% static 'navbar/js/jquery.min.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'navbar/js/popper.min.js' %}"></script>
-  <script src="{% static 'navbar/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'navbar/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'navbar/js/aos.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'navbar/js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'navbar/js/jquery.timepicker.min.js' %}"></script>
-  <script src="{% static 'navbar/js/scrollax.min.js' %}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'navbar/js/google-map.js' %}"></script>
-  <script src="{% static 'navbar/js/main.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.min.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'navbar/js/popper.min.js' %}"></script>
+    <script src="{% static 'navbar/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'navbar/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'navbar/js/aos.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'navbar/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'navbar/js/jquery.timepicker.min.js' %}"></script>
+    <script src="{% static 'navbar/js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'navbar/js/google-map.js' %}"></script>
+    <script src="{% static 'navbar/js/main.js' %}"></script>
     
+    <script src="{% static 'loader/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'loader/js/active.js' %}"></script>
+
+    <script src="{% static 'countdown/js/countdown.js' %}"></script>
+
+    <script src="{% static 'donation/js/superfish.min.js' %}"></script>
+    <script src="{% static 'donation/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'donation/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'donation/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'donation/js/main.js' %}"></script>
+
   </body>
 </html>

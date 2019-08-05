@@ -25,8 +25,15 @@
     <link rel="stylesheet" href="{% static 'review/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'review/css/style.css' %}">
 
+    <link rel="stylesheet" href="{% static 'loader/style.css' %}">
+
     <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
   </head>
+  <div id="preloader">
+      <i class="preloader"></i>
+      <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+  </div>
+
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="{% url 'main' %}">Mong's Shelter</a>
@@ -43,6 +50,7 @@
 	        	<li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
             <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
             <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+            <li class="nav-item"><a href="{% url 'game' %}" class="nav-link">Game</a></li>
             <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
             <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
             <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
@@ -64,33 +72,11 @@
             </div>
             <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <div class="text">
-                <span class="subheading">Welcome to the Club</span>
-                <h1 class="mb-4 mt-3" style="color: #000000">Get A <span>Perfect</span> Body <span>Figure</span></h1>
-                <p style="color: #000000">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+                <span class="subheading">Mong's Shelter</span>
+                <h1 class="mb-4 mt-3" style="color: #000000">How are you?</h1>
+                <p style="color: #000000">아이들이 얼마나 행복하게 지내고 있는지, <br>아이들이 얼마나 성장했는지 마음껏 자랑해주세요.</p>
                 
-                <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Join with us</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slider-item js-fullheight">
-        <div class="overlay"></div>
-        <div class="container-fluid p-0">
-          <div class="row d-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
-            <div class="one-third order-md-last img js-fullheight" style="background-image:url(../static/review/images/dogs3.png);">
-              <!--
-                <h3 class="vr" style="background-image: url(../static/review/images/divider.jpg);">JOY & MIN</h3>
-              -->
-            </div>
-            <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-              <div class="text">
-                <span class="subheading">Welcome to Club</span>
-                <h1 class="mb-4 mt-3" style="color: #000000">Pain is <span>Temporary</span> But Glory is <span>Forever</span></h1>
-                <p style="color: #000000">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-                
-                <p><a href="#" class="btn btn-primary px-5 py-3 mt-3">Join with us</a></p>
+                <p><a href="{% url 'adopting' %}" class="btn btn-primary px-5 py-3 mt-3">Adoption</a></p>
               </div>
             </div>
           </div>
@@ -103,9 +89,9 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Blog</span>
-            <h2 class="mb-4">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              <span class="subheading" style="color: #fe9191">Mong's Review</span>
+            <h2 class="mb-4">Adoption Reveiw</h2>
+            <p>아이들의 근황을 알려주세요.</p>
           </div>
         </div>
         <div class="row d-flex">
@@ -129,7 +115,6 @@
                 <div class="d-flex align-items-center mt-4 meta">
 	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
 	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
 	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
 	                </p>
                 </div>
@@ -168,83 +153,76 @@
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Mong's Shelter</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Mong's Shelter</h2>
+                <p>저희 웹 사이트를 이용해주셔서 감사합니다. 앞으로도 더 노력하는 멍스쉘터가 되겠습니다.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#">Architectural Design</a></li>
-                <li><a href="#">Interior Design</a></li>
-                <li><a href="#">Exterior Design</a></li>
-                <li><a href="#">Lighting Design</a></li>
-                <li><a href="#">AutoCAD Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-4">
+                <h2 class="ftco-heading-2">Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="{% url 'main' %}">Home</a></li>
+                  <li><a href="{% url 'about_us' %}">About</a></li>
+                  <li><a href="{% url 'review' %}">Adoption Review</a></li>
+                  <li><a href="{% url 'q&a' %}">Q & A</a></li>
                 </ul>
               </div>
             </div>
+            <div class="col-md">
+               <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Services</h2>
+                <ul class="list-unstyled">
+                  <li><a href="{% url 'adopting' %}">Adopting</a></li>
+                  <li><a href="{% url 'school_dog' %}">Mong's School</a></li>
+                  <li><a href="{% url 'magazine' %}">Magazine</a></li>
+                  <li><a href="#">Game</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Have a Questions?</h2>
+                <div class="block-23 mb-3">
+                  <ul>
+                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+                    <li><a href="#"><span class="icon icon-envelope"></span><span class="text">wsj1998@naver.com</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-  <!-- loader -->
-  <script src="{% static 'review/js/jquery.min.js' %}"></script>
-  <script src="{% static 'review/js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'review/js/popper.min.js' %}"></script>
-  <script src="{% static 'review/js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'review/js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'review/js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'review/js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'review/js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'review/js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'review/js/aos.js' %}"></script>
-  <script src="{% static 'review/js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'review/js/scrollax.min.js' %}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'review/js/google-map.js' %}"></script>
+          <div class="row">
+            <div class="col-md-12 text-center">
   
-  <script src="{% static 'review/js/main.js' %}"></script>
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mong's Shelter All rights reserved
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    <script src="{% static 'review/js/jquery.min.js' %}"></script>
+    <script src="{% static 'review/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'review/js/popper.min.js' %}"></script>
+    <script src="{% static 'review/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'review/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'review/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'review/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'review/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'review/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'review/js/aos.js' %}"></script>
+    <script src="{% static 'review/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'review/js/scrollax.min.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{% static 'review/js/google-map.js' %}"></script>
+    <script src="{% static 'review/js/main.js' %}"></script>
+
+    <script src="{% static 'loader/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'loader/js/active.js' %}"></script>
   </body>
 </html>

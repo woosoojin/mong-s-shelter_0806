@@ -34,13 +34,12 @@ body {
     overflow-y: hidden; }
 
 a {
-  color: #F9CE00;
+  color: #000000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover {
-    text-decoration: underline;
-    color: #F9CE00; }
+    color: #ffcdcd; }
   a:focus, a:active {
     outline: none; }
 
@@ -137,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
   #colorlib-main-nav .colorlib-nav-toggle {
     position: absolute;
     top: 5px;
-    right: 40px;
+    right: 90px;
     padding: 20px;
     height: 44px;
     width: 44px;
@@ -164,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
       visibility: visible;
       opacity: 1; }
     #colorlib-main-nav .colorlib-nav-toggle:hover {
-      background: black; }
+      background: #ffcdcd; }
       #colorlib-main-nav .colorlib-nav-toggle:hover i::before, #colorlib-main-nav .colorlib-nav-toggle:hover i::after {
         content: '';
         width: 20px;
@@ -206,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
           outline: none;
           text-decoration: none; }
       #colorlib-main-nav ul li.active a {
-        color: #ffcdcd; }
+        color: #fe9191; }
   #colorlib-main-nav .form-group {
     margin-bottom: 40px;
     position: relative;
@@ -298,11 +297,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px; }
 
 header {
-  padding: 2em 0;
+  padding: 3em 0;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  right: 150px;
   z-index: 9;
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
@@ -586,7 +585,7 @@ header {
   position: relative; }
 
   .hero-img {
-  background-size: 800px 500px;
+  background-size: 700px 500px;
   background-position: 60px 180px;
   background-repeat: no-repeat;
   position: relative; }
@@ -825,8 +824,8 @@ header {
   color: #fff;
   border: 2px solid #F9CE00; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #ffd614 !important;
-    border-color: #ffd614 !important; }
+    background: #fe9191 !important;
+    border-color: #fe9191 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #4d4d4d;
@@ -1034,7 +1033,7 @@ header {
   z-index: 1003;
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 0 -80px;
   cursor: pointer;
   margin-top: 0; }
   @media screen and (max-width: 768px) {

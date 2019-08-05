@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mong's Shelter - 멍스쉘터</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'navbar/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'navbar/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'navbar/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'navbar/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'navbar/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/jquery.timepicker.css' %}">
+
+    
+    <link rel="stylesheet" href="{% static 'navbar/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'navbar/css/style.css' %}">
+    
+    <link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
+  </head>
+  <body style="padding:0px; margin:0px; width:100%;">
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
+	    <div class="container">
+	      <a class="navbar-brand" href="{% url 'main' %}">Mong's Shelter</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="{% url 'main' %}" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="{% url 'about_us' %}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{% url 'adopting' %}" class="nav-link">Adopting</a></li>
+            <li class="nav-item"><a href="{% url 'review' %}" class="nav-link">Adoption Review</a></li>
+	        	<li class="nav-item"><a href="{% url 'school_dog' %}" class="nav-link">Mong's School</a></li>
+            <li class="nav-item"><a href="{% url 'magazine' %}" class="nav-link">Magazine</a></li>
+            <li class="nav-item"><a href="{% url 'q&a' %}" class="nav-link">Q & A</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Log in</a></li>
+            <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Sign up</a></li>
+            <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Log out</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+  
+        {% block content %}
+
+        {% endblock %}
+     
+              
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Mong's Shelter</h2>
+              <p>저희 웹 사이트를 이용해주셔서 감사합니다. 앞으로도 더 노력하는 멍스쉘터가 되겠습니다.</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'main' %}">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About</a></li>
+                <li><a href="{% url 'review' %}">Adoption Review</a></li>
+                <li><a href="{% url 'q&a' %}">Q & A</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="{% url 'adopting' %}">Adopting</a></li>
+                <li><a href="{% url 'school_dog' %}">Mong's School</a></li>
+                <li><a href="{% url 'magazine' %}">Magazine</a></li>
+                <li><a href="#">Game</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+                  <li><a href="mailto: woosj98@gmail.com"><span class="icon icon-envelope"></span><span class="text">woosj98@gmail.com</span></a></li>
+                  <li><a href="mailto: wsj1998@naver.com"><span class="icon icon-envelope"></span><span class="text">wsj1998@naver.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mong's Shelter All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#ffcdcd"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ffcdcd"/></svg></div>
+
+  <script src="{% static 'navbar/js/jquery.min.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'navbar/js/popper.min.js' %}"></script>
+  <script src="{% static 'navbar/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'navbar/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'navbar/js/aos.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'navbar/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'navbar/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'navbar/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'navbar/js/google-map.js' %}"></script>
+  <script src="{% static 'navbar/js/main.js' %}"></script>
+  </body>
+</html>

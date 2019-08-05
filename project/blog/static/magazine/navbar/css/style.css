@@ -78,8 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-top: 40px;
+  margin-bottom: -2rem; }
 
 abbr[title],
 abbr[data-original-title] {
@@ -507,7 +507,9 @@ pre {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px; 
+  flex: 45.66667%;
+  max-width: 46.66667%;}
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -1056,11 +1058,6 @@ pre {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-lg-5 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 41.66667%;
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
   .col-lg-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -8069,7 +8066,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #141313;
-  padding: 6em 0; }
+  padding: 10em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }

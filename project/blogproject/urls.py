@@ -31,6 +31,8 @@ urlpatterns = [
     path('service/', blog.views.service, name="service"),
     path("magazine_de/", blog.views.magazine_de, name="magazine_de"),
     path("magazine_de2/", blog.views.magazine_de2, name="magazine_de2"),
+    path("magazine_de3/", blog.views.magazine_de3, name="magazine_de3"),
+    path("game/", blog.views.game, name="game"),
 
     path('review/', post.views.review, name="review"),
     # path('question/', post.views.question, name="question"),

@@ -7822,8 +7822,9 @@ h1, h2, h3, h4, h5,
   border-bottom: 4px solid #ffe1e1; }
 
 .ftco-services {
-  margin-top: -50px;
-  padding-bottom: 5em; }
+  margin-top: -10px;
+  padding-bottom: 1em; 
+  padding-left: 20px;}
   .ftco-services .services {
     display: block;
     width: 100%;
@@ -8007,11 +8008,11 @@ h1, h2, h3, h4, h5,
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      border: 1px solid #ffcdcd;
+      border: 2px solid #ffcdcd;
       text-align: center;
       display: inline-block;
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       line-height: 40px;
       border-radius: 50%; }
     .block-27 ul li.active a, .block-27 ul li.active span {
@@ -8061,7 +8062,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 6em 0;
+  padding: 3.5em 0;
   position: relative; }
 
 .ftco-bg-dark {
@@ -8716,3 +8717,5 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    
