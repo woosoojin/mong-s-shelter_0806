@@ -507,7 +507,8 @@ pre {
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px; 
+  padding-top: 8px;}
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -6304,7 +6305,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 0rem !important; }
 
 .pl-5,
 .px-5 {
@@ -8071,7 +8072,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 14px;
   background: #141313;
-  padding: 6em 0; }
+  padding: 5.5em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -8175,7 +8176,7 @@ textarea.form-control {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #b3b3b3; }
+  color: #fe9191; }
 
 .heading-section h2 {
   font-size: 34px;

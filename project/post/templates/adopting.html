@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,6 @@
 	
       <!-- Stylesheets -->
       <link href="{% static 'match/common-css/fluidbox.min.css' %}" rel="stylesheet">
-      <link href="{% static 'match/common-css/font-icon.css' %}" rel="stylesheet">
       <link href="{% static 'match/01-homepage/css/responsive.css' %}" rel="stylesheet">
 
       <link href="https://fonts.googleapis.com/css?family=Gamja+Flower&display=swap&subset=korean" rel="stylesheet">
@@ -21,6 +20,9 @@
       <link href="https://fonts.googleapis.com/css?family=Hi+Melody&display=swap" rel="stylesheet">
 
       <link rel="stylesheet" href="{% static 'adopt/main.css' %}">
+
+      <!--loader-->
+      <link rel="stylesheet" href="{% static 'loader/style.css' %}"> 
   <style>
     .ftco-navbar-light {
       background: transparent !important;
@@ -42,12 +44,17 @@
       font-family: "Gamja Flower";
     }
     a.primary-btn{
-      font-family: "Gamja Flower";
+      font-family: "Nanum Pen Script";
     }
   </style>
  
   </head>
   <body>
+      <div id="preloader">
+          <i class="preloader"></i>
+          <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+      </div>
+
       <section class="home-slider js-fullheight owl-carousel">
 
           <div class="slider-item js-fullheight" style="background-image:url(../../static/adopt/images/puppies_waiting_dogs_11451_1920x1080.jpg);">
@@ -118,14 +125,13 @@
             </div>
           </div>
 
-
-          
-          <div class="heading-section mb-md-5 pl-md-5 heading-section-with-line">
-            <div class="pr-md-5 mr-md-5">
-              <h2 class="mb-4">아이들 입양하기</h2>
-              <span class="subheading">You can save their life.</span>
-          </div>
-        </div>
+          <div class="row justify-content-center pb-5" style="padding-bottom: 0rem">
+              <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading">Adoption</span>
+                <h2 class="mb-4">아이들 입양하기</h2>
+                <p>아이들에게 '유기견'이란 주홍글씨를 떼어주세요.</p>
+              </div>
+            </div>
         <script src="{% static 'match/common-js/jquery-3.1.1.min.js' %}"></script>
         <script src="{% static 'match/common-js/tether.min.js' %}"></script>
         <script src="{% static 'match/common-js/bootstrap.js' %}"></script>  
@@ -161,7 +167,7 @@
               <h4 class="description" style="color: white; font-size: 30px">{{adopts.description}}</h4>
             </div>
             <div class="button" style="text-align: center; padding-bottom: 30px;">
-                <a href="#" class="primary-btn offwhite" style="font-size: 20px;"><strong>{{adopts.name}}</strong> 입양하기</a>
+                <a href="#" class="primary-btn offwhite" style="font-size: 30px;"><strong>{{adopts.name}}</strong> 입양하기</a>
             </div>
           </a>
           <a class="blog-post full" style="background-image:url({{adopts.image2.url}});" href="#">
@@ -171,7 +177,7 @@
                 <h4 class="description" style="color: white; font-size: 30px">{{adopts.description2}}</h4>
               </div>
               <div class="button" style="text-align: center; padding-bottom: 20px;">
-                  <a href="#" class="primary-btn offwhite" style="font-size: 20px"><strong>{{adopts.name2}}</strong> 입양하기</a>
+                  <a href="#" class="primary-btn offwhite" style="font-size: 30px"><strong>{{adopts.name2}}</strong> 입양하기</a>
               </div>
             </a>
         </div>
@@ -194,10 +200,12 @@
   </div>
   <br>
 
-	<script src="{% static 'adopt/common-js/jquery-3.2.1.min.js' %}"></script>
-	<script src="{% static 'adopt/common-js/scripts.js' %}"></script>
-  
-  
+	  <script src="{% static 'adopt/common-js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'adopt/common-js/scripts.js' %}"></script>
+
+    <script src="{% static 'loader/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'loader/js/active.js' %}"></script>
+
 </body>
 {% endblock %}
 </html>
