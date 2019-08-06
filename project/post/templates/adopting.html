@@ -44,9 +44,6 @@
     h4.color-green{
       font-family: "Gamja Flower";
     }
-    a.primary-btn{
-      font-family: "Nanum Pen Script";
-    }
   </style>
  
   </head>
@@ -120,7 +117,7 @@
                   <br><br>
                   
                   <br>
-                  <p style="text-align: center"><a href="#" class="btn-custom">입양신청서 작성하기 <span class="ion-ios-arrow-forward"></span></a></p>
+                  <p style="text-align: center"><a href="{% url 'personal_info' %}" class="btn-custom">입양신청서 작성하기 <span class="ion-ios-arrow-forward"></span></a></p>
                 </div>
               </div>
             </div>
@@ -161,24 +158,24 @@
   <section class="main-section">
       {% for adopts in posts %}
         <div class="blog-area">
-          <a class="blog-post full" style="background-image:url({{adopts.image.url}});" href="#">
+          <a class="blog-post full" style="background-image:url({{adopts.image.url}});">
             <img src="{{adopts.image.url}}" alt="">
             <div class="blog-info">
               <h4 class="color-green margin-b-5" style="font-size: 30px">{{adopts.name}}<br></h4>
               <h4 class="description" style="color: white; font-size: 30px">{{adopts.description}}</h4>
             </div>
             <div class="button" style="text-align: center; padding-bottom: 30px;">
-                <a href="#" class="primary-btn offwhite" style="font-size: 30px;"><strong>{{adopts.name}}</strong> 입양하기</a>
+                <a href="{% url 'personal_info' %}" class="primary-btn offwhite" style="font-size: 20px; border-radius: 30px;">Adopt</a>
             </div>
           </a>
-          <a class="blog-post full" style="background-image:url({{adopts.image2.url}});" href="#">
+          <a class="blog-post full" style="background-image:url({{adopts.image2.url}});">
               <img src="{{adopts.image2.url}}" alt="">
               <div class="blog-info">
                 <h4 class="color-green margin-b-5" style="font-size: 30px">{{adopts.name2}}<br></h4>
                 <h4 class="description" style="color: white; font-size: 30px">{{adopts.description2}}</h4>
               </div>
               <div class="button" style="text-align: center; padding-bottom: 20px;">
-                  <a href="#" class="primary-btn offwhite" style="font-size: 30px"><strong>{{adopts.name2}}</strong> 입양하기</a>
+                  <a href="{% url 'personal_info' %}" class="primary-btn offwhite" style="font-size: 20px; border-radius: 30px;">Adopt</a>
               </div>
             </a>
         </div>

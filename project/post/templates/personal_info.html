@@ -5,8 +5,9 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="{% static 'info/img/favicon.png' %}" type="image/png">
-        <title>Real State Multi</title>
+		<title>Mong's Shelter - 멍스쉘터</title>
+		<link href="https://cdn4.iconfinder.com/data/icons/social-messaging-productivity-black-4/1/101_13-512.png" rel="shortcut icon">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{% static 'info/css/bootstrap.css' %}">
         <link rel="stylesheet" href="{% static 'info/vendors/linericon/style.css' %}">
@@ -17,475 +18,304 @@
         <link rel="stylesheet" href="{% static 'info/vendors/animate-css/animate.css' %}">
         <!-- main css -->
         <link rel="stylesheet" href="{% static 'info/css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'info/css/responsive.css' %}">
-    </head>
+		<link rel="stylesheet" href="{% static 'info/css/responsive.css' %}">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+		<!--loader-->
+		<link rel="stylesheet" href="{% static 'loader/style.css' %}">
+
+	</head>
     <body>
-			<!-- Start Button -->
-			<section class="button-area">
-				<div class="container border-top-generic">
-					<h3 class="text-heading title_color">Sample Buttons</h3>
-					<div class="button-group-area">
-						<a href="#" class="genric-btn default">Default</a>
-						<a href="#" class="genric-btn primary">Primary</a>
-						<a href="#" class="genric-btn success">Success</a>
-						<a href="#" class="genric-btn info">Info</a>
-						<a href="#" class="genric-btn warning">Warning</a>
-						<a href="#" class="genric-btn danger">Danger</a>
-						<a href="#" class="genric-btn link">Link</a>
-						<a href="#" class="genric-btn disable">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border">Default</a>
-						<a href="#" class="genric-btn primary-border">Primary</a>
-						<a href="#" class="genric-btn success-border">Success</a>
-						<a href="#" class="genric-btn info-border">Info</a>
-						<a href="#" class="genric-btn warning-border">Warning</a>
-						<a href="#" class="genric-btn danger-border">Danger</a>
-						<a href="#" class="genric-btn link-border">Link</a>
-						<a href="#" class="genric-btn disable">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default radius">Default</a>
-						<a href="#" class="genric-btn primary radius">Primary</a>
-						<a href="#" class="genric-btn success radius">Success</a>
-						<a href="#" class="genric-btn info radius">Info</a>
-						<a href="#" class="genric-btn warning radius">Warning</a>
-						<a href="#" class="genric-btn danger radius">Danger</a>
-						<a href="#" class="genric-btn link radius">Link</a>
-						<a href="#" class="genric-btn disable radius">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border radius">Default</a>
-						<a href="#" class="genric-btn primary-border radius">Primary</a>
-						<a href="#" class="genric-btn success-border radius">Success</a>
-						<a href="#" class="genric-btn info-border radius">Info</a>
-						<a href="#" class="genric-btn warning-border radius">Warning</a>
-						<a href="#" class="genric-btn danger-border radius">Danger</a>
-						<a href="#" class="genric-btn link-border radius">Link</a>
-						<a href="#" class="genric-btn disable radius">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default circle">Default</a>
-						<a href="#" class="genric-btn primary circle">Primary</a>
-						<a href="#" class="genric-btn success circle">Success</a>
-						<a href="#" class="genric-btn info circle">Info</a>
-						<a href="#" class="genric-btn warning circle">Warning</a>
-						<a href="#" class="genric-btn danger circle">Danger</a>
-						<a href="#" class="genric-btn link circle">Link</a>
-						<a href="#" class="genric-btn disable circle">Disable</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border circle">Default</a>
-						<a href="#" class="genric-btn primary-border circle">Primary</a>
-						<a href="#" class="genric-btn success-border circle">Success</a>
-						<a href="#" class="genric-btn info-border circle">Info</a>
-						<a href="#" class="genric-btn warning-border circle">Warning</a>
-						<a href="#" class="genric-btn danger-border circle">Danger</a>
-						<a href="#" class="genric-btn link-border circle">Link</a>
-						<a href="#" class="genric-btn disable circle">Disable</a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn default circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn primary circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn success circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn info circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn warning circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn danger circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn default-border circle arrow">Default<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn primary-border circle arrow">Primary<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn success-border circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn info-border circle arrow">Info<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn warning-border circle arrow">Warning<span class="lnr lnr-arrow-right"></span></a>
-						<a href="#" class="genric-btn danger-border circle arrow">Danger<span class="lnr lnr-arrow-right"></span></a>
-					</div>
-					<div class="button-group-area mt-40">
-						<a href="#" class="genric-btn primary e-large">Extra Large</a>
-						<a href="#" class="genric-btn success large">Large</a>
-						<a href="#" class="genric-btn primary">Default</a>
-						<a href="#" class="genric-btn success medium">Medium</a>
-						<a href="#" class="genric-btn primary small">Small</a>
-					</div>
-					<div class="button-group-area mt-10">
-						<a href="#" class="genric-btn primary-border e-large">Extra Large</a>
-						<a href="#" class="genric-btn success-border large">Large</a>
-						<a href="#" class="genric-btn primary-border">Default</a>
-						<a href="#" class="genric-btn success-border medium">Medium</a>
-						<a href="#" class="genric-btn primary-border small">Small</a>
-					</div>
-				</div>
-			</section>
-            <!-- End Button -->
-            
-
-
-
+		<div id="preloader">
+          <i class="preloader"></i>
+          <img src="{% static 'loader/img/loader.jpg' %}" alt="" style="width: 100px; height: 100px">
+		</div>
+		  
+		<br><br>
+			<div class="home_logo" style="text-align: left; padding-left: 250px; margin-top: 20px">
+				<a href="{% url 'main' %}"><img src="{% static '../static/info/img/Asset 167journey.png' %}" height="30px;"></a>
+			</div>
 			<!-- Start Align Area -->
+			<div class="row justify-content-center pb-5">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+					  <span class="subheading" style="color: #fe9191">Before your adoption</span>
+					  <h2 class="mb-4">입양 신청서</h2>
+					  <p>아이들을 가족으로 받아들이기 위해서는 많은 노력, 시간, 책임감 등이 요구됩니다.<br>하지만 이를 간과하고 아이들을 입양하여 많은 문제들이 발생하고 있습니다.<br>이에 저희 멍스쉘터는 꼼꼼한 입양절차를 지향하고 있습니다.</p>
+					</div>
+					<br>
 					<div class="section-top-border">
-						<div class="row">
-							<div class="col-lg-8 col-md-8">
-								<h3 class="mb-30 title_color" style="text-align: center">예비 부모님 인적사항 기입란</h3>
-								<form action="#">
-									<div class="mt-10">
-										<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="phone_number" placeholder="010-xxxx-xxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number'" required class="single-input">
-									</div>
-									<h6 class="mb-30 title_color">비상 연락망</h6>
-									<div class="mt-10">
-										<input type="text" name="phone_number2" placeholder="비상 연락처" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number2'" required class="single-input">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="relationship" placeholder="관계" onfocus="this.placeholder = ''" onblur="this.placeholder = 'relationship'" required class="single-input">
-									</div>
-
-									<div class="input-group-icon mt-10">
-										<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-										<input type="text" name="address" placeholder="주소" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" required class="single-input">
-									</div>
-									<!--고지서 제출-->
-									<div class="mt-10">
-										<input type="text" name="house" placeholder="고지서 제출" onfocus="this.placeholder = ''" onblur="this.placeholder = 'house'" required class="single-input">
-									</div>
-									<!--아이들은 어디서 지내게 되나요?-->
-									<input type="text" name="stay" placeholder="아이들이 지낼 곳" onfocus="this.placeholder = ''" onblur="this.placeholder = 'stay'" required class="single-input">
-								
-									<br>
-
-									<!--신분증(여권, 주민번호, 운전면허) 사본 첨부-->
-									<!--두칸으로 나눠서 생년월일 - ******* -->
-									<div class="mt-10">
-										<input type="text" name="certification" placeholder="주민등록번호 (본인 확인 및 입양 자격 증명 용도로 사용됩니다.)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Certification'" required class="single-input">
-									</div>
-
-									<!--가족-->
-									<h6 class="mb-30 title_color">가족 구성원 및 소개</h6>
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="현재 함께 살고 있는 가족 구성원에 대해 자세하게 소개해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = 'family'" required></textarea>
-									</div>
-									<!--등본제출-->
-									<div class="mt-10">
-										<input type="text" name="family-member" placeholder="등본 제출" onfocus="this.placeholder = ''" onblur="this.placeholder = 'family-member'" required class="single-input">
-									</div>
-
-									<!--가족 사진 및 영상 첨부란, 선택-->
-									<div class="mt-10">
-										<input type="text" name="about_family" placeholder="가족 사진 및 영상" onfocus="this.placeholder = ''" onblur="this.placeholder = 'about_family'" required class="single-input">
-									</div>
-									
-									<!--다른 동물-->
-									<div class="mt-10">
-										<input type="text" name="family-member" placeholder="등본 제출" onfocus="this.placeholder = ''" onblur="this.placeholder = 'family-member'" required class="single-input">
-									</div>
-
-									<!--주로 아이들을 돌볼 사람-->
-									<div class="mt-10">
-										<input type="text" name="care" placeholder="주로 아이들을 돌볼 사람" onfocus="this.placeholder = ''" onblur="this.placeholder = 'care'" required class="single-input">
-									</div>
-
-									<!--직업관련-->
-									<div class="mt-10">
-										<input type="text" name="job" placeholder="하시는 일(직업)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'job'" required class="single-input">
-									</div>
-									<!--근무시간 칸 따로 만들기-->
-									<div class="mt-10">
-										<input type="text" name="last_name" placeholder="근무시간" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
-									</div>
-									<!--근무요일-->
-									<br>
-									<div class="single-element-widget">
-											<h6 class="mb-30 title_color">근무요일</h6>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>월</p>
-												<div class="primary-checkbox">
-													<input type="checkbox" id="default-checkbox">
-													<label for="default-checkbox"></label>
-												</div>
+							<div class="row">
+								<div class="col-lg-8 col-md-8">
+									<h3 class="mb-30 title_color" style="text-align: center">예비 부모님 인적사항 기입란</h3>
+									<form action="#">
+										<div class="row form-group">
+											<div class="col-md-6">
+												<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required class="single-input">
 											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>화</p>
-												<div class="primary-checkbox">
-													<input type="checkbox" id="primary-checkbox" checked>
-													<label for="primary-checkbox"></label>
-												</div>
+											<div class="col-md-6">
+												<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required class="single-input">
 											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>수</p>
-												<div class="confirm-checkbox">
-													<input type="checkbox" id="confirm-checkbox">
-													<label for="confirm-checkbox"></label>
+										</div>
+	
+										<div class="row form-group">
+											<input type="text" name="phone_number" placeholder="010-xxxx-xxxx" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number'" required class="single-input">
+										</div>
+										
+										<div class="row form-group">
+												<div class="col-md-6 mb-3 mb-md-0">
+													<input type="text" name="phone_number2" placeholder="비상 연락처" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Emergency Contact'" required class="single-input">
 												</div>
-											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>목</p>
-												<div class="disabled-checkbox">
-													<input type="checkbox" id="disabled-checkbox" disabled>
-													<label for="disabled-checkbox"></label>
-												</div>
-											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>금</p>
-												<div class="disabled-checkbox">
-													<input type="checkbox" id="disabled-checkbox-active" disabled>
-													<label for="disabled-checkbox-active"></label>
-												</div>
-											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>토</p>
-												<div class="disabled-checkbox">
-													<input type="checkbox" id="disabled-checkbox-active" disabled>
-													<label for="disabled-checkbox-active"></label>
-												</div>
-											</div>
-												<div class="switch-wrap d-flex justify-content-between">
-													<p>일</p>
-													<div class="disabled-checkbox">
-														<input type="checkbox" id="disabled-checkbox-active" disabled>
-														<label for="disabled-checkbox-active"></label>
-													</div>
+												<div class="col-md-6">
+													<input type="text" name="relationship" placeholder="관계" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Relationship'" required class="single-input">
 												</div>
 										</div>
+										
+										<div class="form-row">
+											<div class="form-group">
+												<input type="text" name="country" placeholder="국가" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Country'" required class="single-input">
+											</div>
+											&nbsp&nbsp&nbsp
+											<div class="form-group">
+												<input type="text" name="state" placeholder="시도" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Country'" required class="single-input">
+											</div>
+											&nbsp&nbsp&nbsp
+											<div class="form-group">
+												<input type="text" name="city" placeholder="면읍구군시" onfocus="this.placeholder = ''" onblur="this.placeholder = 'City'" required class="single-input">
+											</div>
+											&nbsp&nbsp&nbsp
+											<div class="form-group">
+												<input type="text" name="postatl code" placeholder="우편번호" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postal code'" required class="single-input">
+											</div>
+										</div>
+	
+										<!--고지서 제출-->
+										<div class="custom-file" style="width: 485px">
+											<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+											<label class="custom-file-label" for="validatedCustomFile">고지서 제출</label>
+											<div class="invalid-feedback">첨부파일을 제출해주세요.</div>
+										</div>
+										<!--아이들은 어디서 지내게 되나요?-->
+										<div class="mt-10">
+											<input type="text" name="stay" placeholder="입양 후 아이들이 어디서 지내게 되나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'where they will stay'" required class="single-input">
+										</div>
+										<br>
+	
+										<!--신분증(여권, 주민번호, 운전면허) 사본 첨부-->
+										<div class="custom-file" style="width: 485px">
+											<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+											<label class="custom-file-label" for="validatedCustomFile">신분증(여권, 민증, 운전면허증) 사본</label>
+											<div class="invalid-feedback">첨부파일을 제출해주세요.</div>
+										</div>
+	
+										<!--두칸으로 나눠서 생년월일 - ******* -->
+										<div class="mt-10">
+											<input type="text" name="social security number" placeholder="주민등록번호" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Social Security Number'" required class="single-input">
+											<div class="invalid-feedback">주민번호를 입략해주세요.</div>
+										</div>
+	
+										<!--가족-->
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="현재 함께 살고 있는 가족 구성원에 대해 자세하게 소개해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = 'family'" required></textarea>
+										</div>
+										<!--등본제출-->
+										<div class="mt-10">
+											<div class="custom-file" style="width: 485px">
+												<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+												<label class="custom-file-label" for="validatedCustomFile">등본 제출</label>
+												<div class="invalid-feedback">첨부파일을 제출해주세요.</div>
+											</div>
+										</div>
+	
+										<!--가족 사진 및 영상 첨부란, 선택-->
+										<div class="mt-10">
+											<div class="custom-file" style="width: 485px">
+												<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+												<label class="custom-file-label" for="validatedCustomFile">가족 사진 및 영상</label>
+												<div class="invalid-feedback">첨부파일을 제출해주세요.</div>
+											</div>
+										</div>
+										
+										<!--다른 동물-->
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="현재 함께 살고 있는 동물이 있나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'explain about other aniamls'" required></textarea>
+										</div>
+	
+										<!--주로 아이들을 돌볼 사람-->
+										<div class="mt-10" style="width: 485px">
+											<input type="text" name="care" placeholder="주로 아이들을 돌볼 사람은 누구인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'care'" required class="single-input">
+										</div>
+	
+										<!--직업관련-->
+										<div class="mt-10" style="width: 485px">
+											<input type="text" name="job" placeholder="어떤 일을 하고 계신가요? (직업)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'job'" required class="single-input">
+										</div>
+										<!--근무시간 칸 따로 만들기-->
+										<div class="mt-10">
+											<div class="row form-group" style="width: 430px">
+												<div class="col-md-6">
+													<input type="text" name="start_time" placeholder="Start time ex) 9:00" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start time ex) 9:00'" required class="single-input">										
+												</div>
+												<div class="col-md-6">
+													<input type="text" name="end_time" placeholder="End time ex) 17:00" onfocus="this.placeholder = ''" onblur="this.placeholder = 'End time ex) 17:00'" required class="single-input">
+												</div>
+											</div>
+										</div>
 
-									<!--portfolio-->
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="SNS ID 및 Website 주소" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SNS Id'" required></textarea>
-									</div>
+										<!--근무요일-->
+										<div class="mt-10">
+											<h6>근무 요일</h6>
+										</div>
+										     <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="default-checkbox" value="option1">
+												<label class="form-check-label" for="inlineCheckbox1">월</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+												<label class="form-check-label" for="inlineCheckbox2">화</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">수</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">수</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">목</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">금</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">토</label>
+											  </div>
+											  <div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+												<label class="form-check-label" for="inlineCheckbox3">일</label>
+											  </div>
 
-									
-									<!--detail questions-->
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="유기견을 입양하려는 이유" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
-									</div>
-
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="본인에게 동물 혹은 강아지의 의미" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
-									</div>
-
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="그 동안 동물과 관련된, 동물을 위한 활동을 하신 적이 있으신가요? 시기와 활동 내용 등에 대해 기입해 주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
-									</div>
-
-									<!--이 전에 확인 받고 여기서는 이유만 쓰도록-->
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="과거에 키우신 동물이 있다면, 얼마나 함께 살았고 지금 어떻게 되었는지 말씀해주실 수 있나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
-									</div>
-
-									<div class="mt-10">
-										<input type="text" name="adoption" placeholder="입양을 희망하는 아이의 이름 및 이유" onfocus="this.placeholder = ''" onblur="this.placeholder = 'adoptiong'" required class="single-input">
-									</div>
-									<div class="mt-10">
-											<textarea class="single-textarea" placeholder="유기견을 입양하겠다고 마음먹은 계기가 무엇인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
+										<!--portfolio-->
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="SNS ID 및 Website 주소" onfocus="this.placeholder = ''" onblur="this.placeholder = 'SNS Id'" required></textarea>
+										</div>
+	
+										
+										<!--detail questions-->
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="본인에게 동물 혹은 강아지는 어떤 의미인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What does animal or Dog mean to you?'" required></textarea>
+										</div>
+	
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="그 동안 동물과 관련된, 동물을 위한 활동을 하신 적이 있으신가요? 시기와 활동 내용 등에 대해 말씀해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Have you ever done something for animals before by your self? Please tell us detail story.'" required></textarea>
+										</div>
+	
+										<!--이 전에 확인 받고 여기서는 이유만 쓰도록-->
+										<div class="mt-10">
+											<textarea class="single-textarea" placeholder="과거에 키우신 동물이 있나요? 있다면 얼마동안 함께 살았고, 그 아이들은 지금 어떻게 지내고있나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Have you ever raised other animals before? For how long? And they are still with you?'" required></textarea>
+										</div>
+	
+										<div class="mt-10">
+											<input type="text" name="adoption" placeholder="입양을 희망하는 아이의 이름과 이유는 무엇인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'what is the name of dogs you want to adopt? And why?'" required class="single-input">
 										</div>
 										<div class="mt-10">
-												<textarea class="single-textarea" placeholder="유기견 입양을 고민한 기간이 어느정도 되나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
+												<textarea class="single-textarea" placeholder="유기견을 입양하겠다고 마음먹은 계기가 무엇인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why did you make your mind to adopt dog?'" required></textarea>
 											</div>
-									<div class="single-element-widget">
-											<h6 class="mb-30 title_color">입양 후에도 멍스쉘터의 지속적인 지원을 받기 위해서는 정기적인 근황포스팅이 필요합니다. 이에 동의하시겠습니까?</h6>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>01. Yes</p>
-												<div class="primary-radio">
-													<input type="checkbox" id="default-radio">
-													<label for="default-radio"></label>
+											<div class="mt-10">
+													<textarea class="single-textarea" placeholder="유기견 입양을 고민한 기간이 어느정도 되나요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'How long have you considerd about adopting stray dogs'" required></textarea>
 												</div>
+											<div class="mt-10">
+												<h6>입양 후에도 멍스쉘터의 지속적인 지원을 받기 위해서는 정기적인 근황포스팅이 필요합니다. 이에 동의하시겠습니까?</h6>
 											</div>
-											<div class="switch-wrap d-flex justify-content-between">
-												<p>02. No</p>
-												<div class="primary-radio">
-													<input type="checkbox" id="primary-radio" checked>
-													<label for="primary-radio"></label>
-												</div>
+											<div class="custom-control custom-radio">
+													<input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+													<label class="custom-control-label" for="customControlValidation2">Yes</label>
+												  </div>
+												  <div class="custom-control custom-radio mb-3">
+													<input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+													<label class="custom-control-label" for="customControlValidation3">No</label>
+													<div class="invalid-feedback">동의 하셔야 입양이 가능합니다.</div>
+												  </div>
+
+											<div class="mt-10">
+												<textarea class="single-textarea" placeholder="입양 후 가족구성원이 아이들에게 매일 해 줄 수 있는 것은 무엇이 있습니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'After adoption, what you can do for your dog everyday.'" required></textarea>
+											</div>
+											<div class="mt-10">
+												<textarea class="single-textarea" placeholder="특별한 사정으로 아이가 오랫동안 혼자 있어야 할때, 아이를 어떻게 하실 예정이십니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'if your dog have to stay alone for a long time for specific situation, what you gonna do?'" required></textarea>
+											</div>
+	
+											<div class="mt-10">
+												<h6>아이들이 하룻동안 온전히 혼자 시간을 보내야 하는 시간</h6>
 											</div>
 										
+										<div class="input-group-icon mt-10">
+											<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+											<div class="form-select" id="default-select">
+												<select>
+													<option value="1">0 시간</option>
+													<option value="1">1-3</option>
+													<option value="1">3-6</option>
+													<option value="1">6-8</option>
+													<option value="1">8-10</option>
+													<option value="1">10시간 이상</option>
+												</select>
+											</div>
+										</div>
+	
+										<div class="mt-10">
+											<input type="text" name="stroll" placeholder="일주일에 아이들이 얼마나 자주 외출을 할 수 있을까요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'How often your dog can enjoy outdoor activity in a week?'" required class="single-input">
 										</div>
 										<div class="mt-10">
-											<textarea class="single-textarea" placeholder="입양 후 가족구성원이 아이들에게 매일 해 줄 수 있는 것은 무엇이 있습니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
-										</div>
+												<input type="text" name="together" placeholder="아이를 입양하신 후 가장 먼저 함께 하고 싶은 일이 무엇인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'After adoption, which activity will you do with your dog for the first time?'" required class="single-input">
+											</div>
 										<div class="mt-10">
-											<textarea class="single-textarea" placeholder="특별한 사정으로 아이가 오랫동안 혼자 있어야 할때, 아이를 어떻게 하실 예정이십니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'why'" required></textarea>
+											<input type="text" name="responsibility" placeholder="아이들을 파양, 유기, 학대 등의 사실이 밝혀졌을 경우 본인에게 책임을 물어도 되겠습니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please have a sense of responsibility to your dog. If you find out that you are not responsible, we can ask you a responsibility.'" required class="single-input">
 										</div>
-
-									<h6>아이들이 하룻동안 온전히 혼자 시간을 보내야 하는 시간</h6>
-									<div class="input-group-icon mt-10">
-										<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
-										<div class="form-select" id="default-select">
-											<select>
-												<option value="1">0 시간</option>
-												<option value="1">1-3</option>
-												<option value="1">3-6</option>
-												<option value="1">6-8</option>
-												<option value="1">8-10</option>
-												<option value="1">10시간 이상</option>
-											</select>
+	
+										<div class="row form-group">
+												<div class="col-md-6">
+													<input type="text" name="digital_signature" placeholder="전자서명" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digital Signature'" required class="single-input">
+												</div>
 										</div>
-									</div>
-									<div class="mt-10">
-										<input type="text" name="family-member" placeholder="일주일에 아이들이 얼마나 자주 외출을 할 수 있을까요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'family-member'" required class="single-input">
-									</div>
-									<div class="mt-10">
-											<input type="text" name="family-member" placeholder="아이를 입양하신 후 가장 먼저 함께 하고 싶은 일이 무엇인가요?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'family-member'" required class="single-input">
+										<div class="form-group col-md-12">
+												<input type="text" class="form-control" id="datepicker" name="text" placeholder="서명일 ex) 2019 08 07" onfocus="this.placeholder = ''"
+												 onblur="this.placeholder = 'ex) 2019 08 07'">
+											</div>
+										<div class="form-group">
+												<div class="form-check">
+												  <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+												  <label class="form-check-label" for="invalidCheck3">
+													사실여부 증명 동의
+												  </label>
+												  <div class="invalid-feedback">
+													You must agree before submitting.
+												  </div>
+												</div>
+											</div>
+										<div class="form-group">
+												<div class="form-check">
+												  <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+												  <label class="form-check-label" for="invalidCheck3">
+													개인정보 처리 동의
+												  </label>
+												  <div class="invalid-feedback">
+													You must agree before submitting.
+												  </div>
+												</div>
+											</div>
+										<div class="button" style="text-align: center">
+											<button class="genric-btn primary-border circle arrow" type="submit">Submit</button>
 										</div>
-									<div class="mt-10">
-										<input type="text" name="family-member" placeholder="아이들을 파양, 유기, 학대 등의 사실이 밝혀졌을 경우 본인에게 책임을 물어도 되겠습니까?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'family-member'" required class="single-input">
-									</div>
-
-									<h6>최종 입양조건 동의화면</h6>
-									<h6>전자 서명</h6>
-									<h6>사실 여부 증명 동의</h6>
-									<h6>개인정보 처리 동의</h6>
-
-									<h1>제출하기</h1>
-
-									<div class="input-group-icon mt-10">
-										<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
-										<div class="form-select" id="default-select2">
-											<select>
-												<option value="1">Country</option>
-												<option value="1">Bangladesh</option>
-												<option value="1">India</option>
-												<option value="1">England</option>
-												<option value="1">Srilanka</option>
-											</select>
-										</div>
-									</div>
-									
-									<div class="mt-10">
-										<textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
-									</div>
-									<div class="mt-10">
-										<input type="text" name="first_name" placeholder="Primary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primary color'" required class="single-input-primary">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="first_name" placeholder="Accent color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Accent color'" required class="single-input-accent">
-									</div>
-									<div class="mt-10">
-										<input type="text" name="first_name" placeholder="Secondary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary color'" required class="single-input-secondary">
-									</div>
-								</form>
-							</div>
-							<div class="col-lg-3 col-md-4 mt-sm-30 element-wrap">
-								<div class="single-element-widget">
-									<h3 class="mb-30 title_color">Switches</h3>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>01. Sample Switch</p>
-										<div class="primary-switch">
-											<input type="checkbox" id="default-switch">
-											<label for="default-switch"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>02. Primary Color Switch</p>
-										<div class="primary-switch">
-											<input type="checkbox" id="primary-switch" checked>
-											<label for="primary-switch"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>03. Confirm Color Switch</p>
-										<div class="confirm-switch">
-											<input type="checkbox" id="confirm-switch" checked>
-											<label for="confirm-switch"></label>
-										</div>
-									</div>
-								</div>
-								<div class="single-element-widget">
-									<h3 class="mb-30 title_color">Selectboxes</h3>
-									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">English</option>
-											<option value="1">Spanish</option>
-											<option value="1">Arabic</option>
-											<option value="1">Portuguise</option>
-											<option value="1">Bengali</option>
-										</select>
-									</div>
-								</div>
-								<div class="single-element-widget">
-									<h3 class="mb-30 title_color">Checkboxes</h3>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>01. Sample Checkbox</p>
-										<div class="primary-checkbox">
-											<input type="checkbox" id="default-checkbox">
-											<label for="default-checkbox"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>02. Primary Color Checkbox</p>
-										<div class="primary-checkbox">
-											<input type="checkbox" id="primary-checkbox" checked>
-											<label for="primary-checkbox"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>03. Confirm Color Checkbox</p>
-										<div class="confirm-checkbox">
-											<input type="checkbox" id="confirm-checkbox">
-											<label for="confirm-checkbox"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>04. Disabled Checkbox</p>
-										<div class="disabled-checkbox">
-											<input type="checkbox" id="disabled-checkbox" disabled>
-											<label for="disabled-checkbox"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>05. Disabled Checkbox active</p>
-										<div class="disabled-checkbox">
-											<input type="checkbox" id="disabled-checkbox-active" checked disabled>
-											<label for="disabled-checkbox-active"></label>
-										</div>
-									</div>
-								</div>
-								<div class="single-element-widget">
-									<h3 class="mb-30 title_color">Radios</h3>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>01. Sample radio</p>
-										<div class="primary-radio">
-											<input type="checkbox" id="default-radio">
-											<label for="default-radio"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>02. Primary Color radio</p>
-										<div class="primary-radio">
-											<input type="checkbox" id="primary-radio" checked>
-											<label for="primary-radio"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>03. Confirm Color radio</p>
-										<div class="confirm-radio">
-											<input type="checkbox" id="confirm-radio" checked>
-											<label for="confirm-radio"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>04. Disabled radio</p>
-										<div class="disabled-radio">
-											<input type="checkbox" id="disabled-radio" disabled>
-											<label for="disabled-radio"></label>
-										</div>
-									</div>
-									<div class="switch-wrap d-flex justify-content-between">
-										<p>05. Disabled radio active</p>
-										<div class="disabled-radio">
-											<input type="checkbox" id="disabled-radio-active" checked disabled>
-											<label for="disabled-radio-active"></label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+										
+				<!-- End Align Area -->
 				</div>
-			</div>
-			<!-- End Align Area -->
           
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -501,6 +331,10 @@
         <script src="{% static 'info/vendors/jquery-ui/jquery-ui.js' %}"></script>
         <script src="{% static 'info/js/jquery.ajaxchimp.min.js' %}"></script>
         <script src="{% static 'info/js/mail-script.js' %}"></script>
-        <script src="{% static 'info/js/theme.js' %}"></script>
+		<script src="{% static 'info/js/theme.js' %}"></script>
+		
+		<!--loadeer-->
+		<script src="{% static 'loader/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    	<script src="{% static 'loader/js/active.js' %}"></script>
     </body>
 </html>

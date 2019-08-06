@@ -101,7 +101,7 @@
           <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">유기견이라는 <br>주홍글씨를 떼어주세요.</h1>
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">아이들에게 새로운 가족이 되어주세요</p>
-            <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3 mt-3">입양하러 가기</a></p>
+            <p><a href="{% url 'adopting' %}" class="btn btn-white btn-outline-white px-4 py-3 mt-3">입양하러 가기</a></p>
           </div>
         </div>
         </div>
@@ -213,12 +213,12 @@
                     <div class="coach-wrap ftco-animate d-sm-flex">
                       <div class="text pl-md-5">
                         <span class="time">STEP 01</span>
-                        <h2><a href="#">Information</a></h2>
+                        <h2>Information</h2>
                             <p>&nbsp&nbsp예비 부모님의 환경, 성향, 자격 등을 검증하기 위한 단계입니다. 이는 'Adopting'페이지의 입양신청서 작성을 통해 이루어집니다. 또한 'Adopting'페이지에서는 저희가 보호하고 있는 아이들의 모습을 보실 수 있습니다.</p>
                             <div style="text-align: right">
                                 <a href="{% url 'adopting' %}" class="btn-custom">아이들 보러가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
                                 <br>
-                                <a href="#" class="btn-custom">입양신청서 작성하기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                                <a href="{% url 'personal_info' %}" class="btn-custom">입양신청서 작성하기&nbsp<span class="ion-ios-arrow-forward"></span></a>
                             </div>
                       </div>
                     </div>
@@ -228,7 +228,7 @@
                     <div class="coach-wrap ftco-animate d-sm-flex">
                       <div class="text pl-md-5">
                         <span class="time">STEP 02</span>
-                        <h2><a href="#">Schooling</a></h2>
+                        <h2>Schooling</h2>
                         <p>&nbsp&nbsp아이들을 입양하기 전, 예비부모님께서 실질적인 준비를 하실 수 있는 '선택적' 단계입니다. 'Mong's School'페이지를 통해 이수하실 수 있으며, Mong's School에서는 실질적인 다양한 정보들을 제공하고 있습니다. 뿐만 아니라 이 단계를 통해 여러분이 원하는 아이들과의 Matching확률을 높일 수 있습니다.</p>
                           <div style="text-align: right">  
                             <a href="{% url 'school_dog' %}" class="btn-custom">Mong's School 가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
@@ -241,10 +241,10 @@
                     <div class="coach-wrap ftco-animate d-sm-flex">
                       <div class="text pl-md-5">
                         <span class="time">SETP 03</span>
-                        <h2><a href="#">Matching</a></h2>
+                        <h2>Matching</h2>
                         <p>&nbsp&nbspStep 1과 Step2의 정보들을 기반으로 하여, 여러분과 아이들의 Matching이 이루어지는 단계입니다. Matching결과는 매달 30일에 발표됩니다.</p>
                         <div style="text-align: right">  
-                             <a href="{% url 'school_dog' %}" class="btn-custom">Matching결과 보러가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
+                             <a href="#" class="btn-custom">Matching결과 보러가기&nbsp<span class="ion-ios-arrow-forward"></span></a>
                           </div>
                       </div>
                     </div>
@@ -254,7 +254,7 @@
                     <div class="coach-wrap ftco-animate d-sm-flex">
                       <div class="text pl-md-5">
                         <span class="time">STEP 04</span>
-                        <h2><a href="#">Post Management</a></h2>
+                        <h2>Post Management</h2>
                         <p>&nbsp&nbsp멍스쉘터를 통해 입양을 하신 분들께서는 입양후기를 정기적으로 작성해주셔야 합니다. 저희는 'Adoption Review'페이지에 올라온 여러분들의 게시글을 통해 아이들의 근황을 파악하게 됩니다. 그리고 이는 입양을 고민하시는 예비부모님께도 많은 도움이 됩니다.
                                또한 정기적인 후기작성을 하셔야만 멍스쉘터의 지속적인 지원을 받으실 수 있습니다.</p>
                                <div style="text-align: right">  
@@ -288,9 +288,7 @@
                     <div class="thumb">
                       <img class="c-img img-fluid" src="{% static 'Mag/images/1.png' %}" alt="">
                     </div>
-                    <a href="{% url 'magazine_de' %}">
                       <h3 class="d-name"><strong>까미</strong></h3>
-                    </a>
                     <p class="text">심각한 영양상태로 건강이 악화된 까미에게<br> 후원해주세요.</p>
                   </div>
                   <div class="middle">
@@ -328,9 +326,7 @@
                       <div class="thumb">
                         <img class="c-img img-fluid" src="{% static 'Mag/images/2/3.png' %}" alt="">
                       </div>
-                      <a href="#">
                         <h3 class="d-name"><strong>복실이</strong></h3>
-                      </a>
                       <p class="text">심한 상처와 피부병을 앓고 있는 복실이를 <br>도와주세요.</p>
                     </div>
                     <div class="middle">
@@ -368,9 +364,7 @@
                     <div class="thumb">
                       <img class="c-img img-fluid" src="{% static 'Mag/images/3/11.png' %}" alt="">
                     </div>
-                    <a href="#">
                       <h3 class="d-name"><strong>블레드</strong></h3>
-                    </a>
                     <p class="text">교통사고로 인해 골절이 된 블레드의 다리를 <br>고쳐주세요.</p>
                   </div>
                   <div class="middle">
@@ -473,7 +467,7 @@
                   <li><a href="{% url 'adopting' %}">Adopting</a></li>
                   <li><a href="{% url 'school_dog' %}">Mong's School</a></li>
                   <li><a href="{% url 'magazine' %}">Magazine</a></li>
-                  <li><a href="#">Game</a></li>
+                  <li><a href="{% url 'game' %}">Game</a></li>
                 </ul>
               </div>
             </div>
